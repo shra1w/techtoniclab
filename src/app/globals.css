@@ -2,20 +2,39 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #858484;
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb {
+  background: #2c2c2c;
+}
+.globeBack{
+  box-shadow: rgba(10, 10, 221, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.scroll-container {
+  overflow: hidden; /* Hides overflowing content */
+  position: relative;
+  height: 16vh; /* Full viewport height */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.scroll-content {
+  display: flex;
+  animation: scroll-left 30s linear infinite; /* Animation for scrolling */
+}
+
+@keyframes scroll-left {
+  from {
+      transform: translateX(100%); /* Start from right outside the viewport */
+  }
+  to {
+      transform: translateX(-100%); /* Move to left outside the viewport */
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.scroll-container:hover .scroll-content {
+  animation-play-state: paused; /* Pauses the animation on hover */
 }
