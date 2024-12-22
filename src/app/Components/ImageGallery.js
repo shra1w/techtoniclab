@@ -26,7 +26,7 @@ const ImageCarousel = () => {
   };
 
   return (
-    <div className="relative w-full max-w-5xl mx-auto p-4">
+    <div className="relative w-full  mx-auto p-4">
       <div className="relative aspect-video bg-gray-100  ">
         {/* Current Image */}
         <Image
@@ -38,20 +38,18 @@ const ImageCarousel = () => {
         {/* Navigation Buttons */}
         <button
           onClick={prevSlide}
-          className="absolute -left-14 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/80 hover:bg-white shadow-lg transition-all"
+          className="absolute -left-6 md:-left-14 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/80 hover:bg-white shadow-lg transition-all"
           aria-label="Previous slide"
         >
-          {/* <ChevronLeft className="w-6 h-6 text-gray-800" /> */}
-          <BsArrowLeftCircleFill className=' text-[2rem] text-blue-600'/>
+          <BsArrowLeftCircleFill className=' text-[2rem] md:text-[3rem] text-blue-600'/>
         </button>
         
         <button
           onClick={nextSlide}
-          className="absolute -right-14 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/80 hover:bg-white shadow-lg transition-all"
+          className="absolute -right-6 md:-right-14 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/80 hover:bg-white shadow-lg transition-all"
           aria-label="Next slide"
         >
-          {/* <ChevronRight className="w-6 h-6 text-gray-800" /> */}
-          <BsArrowLeftCircleFill className=' rotate-180 text-[2rem] text-blue-600'/>
+          <BsArrowLeftCircleFill className='  text-[2rem] rotate-180 md:text-[3rem] text-blue-600'/>
 
         </button>
 

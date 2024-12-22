@@ -45,17 +45,17 @@ export default function HeaderSection() {
     },[])
 
     return (
-        <header className="w-screen h-auto py-3 px-8 z-40 fixed left-0 top-0  flex justify-between backdrop-blur-sm ">
+        <header className="w-screen h-auto py-3 px-3 md:px-8 z-40 fixed left-0 top-0  flex justify-between backdrop-blur-sm ">
             <div 
-                className="flex items-center gap-3 logo"
+                className="flex items-center gap-1 md:gap-3 logo"
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
             >
-                <div className="w-10">
+                <div className=" w-8 md:w-10">
                     <Image src={dayLogo} alt="logo" className="w-full" />
                 </div>
                 {isLoaded && (
-                    <h1 className={`text-[1.9rem] font-[600] mb-1 tracking-tight flex overflow-hidden ${oswald.className}`}>
+                    <h1 className={ ` text-[1.3rem] md:text-[1.9rem] md:text-zinc-900 text-zinc-100 font-[600] mb-1 tracking-tight flex overflow-hidden ${oswald.className}`}>
                         {"Techtonic  Labs".split('').map((char, index) => (
                             <span
                                 key={index}
@@ -74,7 +74,7 @@ export default function HeaderSection() {
                     </h1>
                 )}
             </div>
-            <div className=" flex items-center gap-5">
+            <div className=" flex items-center gap-2 md:gap-5">
             <AnimatedButton/>
             <div className=" mode">
             <div className="  w-9 h-9 text-[1.2rem] text-zinc-800 cursor-pointer rounded-full hover:bg-zinc-200 duration-300 dark:bg-zinc-700 grid place-items-center">

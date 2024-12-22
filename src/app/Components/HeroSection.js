@@ -97,6 +97,13 @@ export default function HeroSection() {
             duration:0.7,
             opacity:0
         })
+        
+        heroTl.from('.layout-textphone',{
+            scaleX:0,
+            duration:0.7,
+            opacity:0,
+            delay:-0.8
+        })
     })
     
     return (
@@ -124,20 +131,20 @@ export default function HeroSection() {
                         </div>
                     </div>
                     <BoxesDesign/>
-                    <div className="w-[90%] h-[60%] absolute bottom-0 flex flex-col md:items-start items-center text-[5rem] md:text-[7rem] leading-[7rem]">
+                    <div className="w-[100%] h-[60%]  absolute bottom-0 flex flex-col md:items-start items-center text-[4.2rem] md:text-[7rem] pb-10 justify-center leading-[5rem] md:text-zinc-950 text-zinc-100 md:leading-[7rem]">
                         <span className="bigText">Empowering</span>
                         <span className="relative flex items-center">
                             <span className="bigText">Future</span> 
-                            <span className=" bigTextCircle origin-bottom-left w-24 h-24 ml-4 flex justify-center bg-sky-500 rounded-r-full rounded-tl-full rounded-bl-[5px] border"></span>
+                            <span className=" bigTextCircle origin-bottom-left w-16 h-16 md:w-24 md:h-24 ml-4 flex justify-center bg-sky-500 rounded-r-full rounded-tl-full rounded-bl-[5px] "></span>
                             <span className=" bigText text-orange-400 pl-4">IT</span> 
                         </span>
                         <span className="bigText">Professionals</span>
-                        <div className="w-full h-auto pt-6 flex pl-[40%] md:pl-[20%]">
-                            <div className="w-56 bigTextbutton h-10 rounded-full bg-zinc-100 text-[1.1rem] flex items-center px-2">
+                        <div className="w-full h-auto pt-6 flex  pl-4   ">
+                            <div className="w-56  bigTextbutton h-10 rounded-full bg-zinc-100 text-[1.1rem] flex items-center px-2">
                                 <div className="w-8 h-8 rounded-full bg-zinc-950 grid place-items-center text-base text-zinc-100 bigTextbuttonCalen">
                                     <FaCalendarCheck/>
                                 </div>
-                                <h1 className={`${outfit.className} pl-3 bigTextbuttonCalenText`}>Book Your Future</h1>
+                                <h1 className={`${outfit.className} pl-3 bigTextbuttonCalenText text-zinc-900`}>Book Your Future</h1>
                             </div>
                         </div>
                     </div>

@@ -4,6 +4,9 @@ import HeroSection from "./Components/HeroSection";
 import PartnerSection from "./Components/Partners";
 import {Outfit } from 'next/font/google'
 import ClassRommSection from "./Components/ClassRoomAndSectins";
+import WhyChooseUS from "./Components/WhyChoseUs";
+import OurCourses from "./Components/Courses";
+import FacultyAndLEaders from "./Components/FacultyAndLeaders";
 
 const outfit = Outfit({
   weight: ['400','500','600','700'],
@@ -18,7 +21,9 @@ export default function Home() {
         <HeroSection/>
         <PartnerSection/>
         <ClassRommSection/>
-        <div className=" w-screen h-screen"></div>
+        <WhyChooseUS/>
+        <OurCourses/>
+        <FacultyAndLEaders/>
       </main>
     </div>
   );

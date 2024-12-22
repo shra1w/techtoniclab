@@ -18,23 +18,38 @@
 .scroll-container {
   overflow: hidden; /* Hides overflowing content */
   position: relative;
-  height: 16vh; /* Full viewport height */
+  height: 16vh; /* Adjust as necessary */
 }
 
 .scroll-content {
   display: flex;
+  height: 100%;
   animation: scroll-left 30s linear infinite; /* Animation for scrolling */
 }
 
 @keyframes scroll-left {
   from {
-      transform: translateX(100%); /* Start from right outside the viewport */
+    transform: translateX(100%); /* Start from right outside the viewport */
   }
   to {
-      transform: translateX(-100%); /* Move to left outside the viewport */
+    transform: translateX(-100%); /* Move to left outside the viewport */
   }
 }
 
 .scroll-container:hover .scroll-content {
   animation-play-state: paused; /* Pauses the animation on hover */
+}
+
+/* Ensure images maintain aspect ratio and are responsive */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Adjust image size for mobile devices */
+@media (max-width: 768px) {
+  .scroll-content img {
+    max-width: 50%; /* Increase size for mobile */
+    height: auto; /* Maintain aspect ratio */
+  }
 }
