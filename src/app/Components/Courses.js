@@ -6,7 +6,7 @@ export default function OurCourses(){
             <div className=" w-full h-aut0 pt-8 space-y-2">
                 <div className=" w-full h-[60vh]  flex p-2 gap-5 ">
                     <div className=" w-[50%] h-full bg-zinc-900 flex  rounded-2xl justify-center items-center flex-col gap-4">
-                    <h1 className="text-[2.4rem] font-[500] text-transparent bg-clip-text bg-gradient-to-r from-sky-300 via-orange-200 to-sky-300">
+                    <h1 className="text-[2.4rem]  font-[500] text-transparent bg-clip-text bg-gradient-to-r from-sky-300 via-orange-200 to-sky-300">
     Seamless SAP Integration Solutions
 </h1>
 <p className=" text-[1.2rem] text-center text-zinc-200 w-[70%]">With deep expertise in SAP systems, we offer end-to-end integration

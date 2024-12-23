@@ -2,7 +2,7 @@
 import { Outfit } from 'next/font/google';
 import Image from 'next/image';
 import synechron from "@/app/assets/clients/syne.svg";
-import hp from "@/app/assets/clients/hpLogo.png";
+import hp from "@/app/assets/clients/hplogo.png";
 import amdocs from "@/app/assets/clients/amdocs.png"
 import ibm from "@/app/assets/clients/ibmlogog.png"
 import barclay from "@/app/assets/clients/barclay.png";
