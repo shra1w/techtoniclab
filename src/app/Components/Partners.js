@@ -50,7 +50,7 @@ export default function PartnerSection() {
   return (
     <div className={`${outfit.className} w-full h-auto bg-zinc-900 flex flex-col items-center py-10 gap-5`}>
       <h1 id='partner' className="partner w-[80%] md:w-[50%] text-[2rem] md:text-[3rem] text-zinc-100 tracking-wide text-center">
-        Our Trusted Placement Partners
+        Our Trusted  Partners
       </h1>
       <div className='max-w-[100%] h-auto relative mt-10 mb-10'>
         <div id='partner-logo' className="scroll-container w-auto h-full">

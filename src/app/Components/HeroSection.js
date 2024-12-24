@@ -11,6 +11,7 @@ import boyWork from "@/app/assets/boyWork.png"
 import { Outfit } from 'next/font/google'
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import Link from "next/link";
 
 const kanit = Kanit({
   weight: ['400','500','600','700'],
@@ -140,12 +141,12 @@ export default function HeroSection() {
                         </span>
                         <span className="bigText">Professionals</span>
                         <div className="w-full h-auto pt-6 flex  pl-4   ">
-                            <div className="w-56  bigTextbutton h-10 rounded-full bg-zinc-100 text-[1.1rem] flex items-center px-2">
+                            <Link href="#contact"><div className="w-56  bigTextbutton h-10 rounded-full bg-zinc-100 text-[1.1rem] flex items-center px-2">
                                 <div className="w-8 h-8 rounded-full bg-zinc-950 grid place-items-center text-base text-zinc-100 bigTextbuttonCalen">
                                     <FaCalendarCheck/>
                                 </div>
                                 <h1 className={`${outfit.className} pl-3 bigTextbuttonCalenText text-zinc-900`}>Book Your Future</h1>
-                            </div>
+                            </div></Link>
                         </div>
                     </div>
                 </div>

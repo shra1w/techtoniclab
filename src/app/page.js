@@ -7,6 +7,8 @@ import ClassRommSection from "./Components/ClassRoomAndSectins";
 import WhyChooseUS from "./Components/WhyChoseUs";
 import OurCourses from "./Components/Courses";
 import FacultyAndLEaders from "./Components/FacultyAndLeaders";
+import ContactUsDetails from "./Components/ContactUsPage";
+import FooterSection from "./Components/Footer";
 
 const outfit = Outfit({
   weight: ['400','500','600','700'],
@@ -24,6 +26,8 @@ export default function Home() {
         <WhyChooseUS/>
         <OurCourses/>
         <FacultyAndLEaders/>
+        <ContactUsDetails/>
+        <FooterSection/>
       </main>
     </div>
   );
