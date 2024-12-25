@@ -1,6 +1,6 @@
 "use client"
 import Image from "next/image";
-import hero1 from "@/app/assets/heroImagefortl.jpg"
+import hero1 from "@/app/assets/heroImage.png"
 import { Kanit,Outfit } from 'next/font/google'
 import start from "@/app/assets/Icons/starfall.svg"
 import globe from "@/app/assets/Icons/globe.png"
@@ -12,6 +12,7 @@ import { Outfit } from 'next/font/google'
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Link from "next/link";
+import { GrRadialSelected } from "react-icons/gr";
 
 const kanit = Kanit({
   weight: ['400','500','600','700'],
@@ -108,20 +109,42 @@ export default function HeroSection() {
     })
     
     return (
-        <div className="w-full min-h-screen bg-gradient-to-tr from-sky-300 via-orange-200 to-sky-300">
-            <div className="relative w-full h-full p-6 flex items-center  gap-5 max-w-screen mx-auto">
+        <div className="w-full min-h-[100vh]  bg-teal-700 bg-opacity-15">
+            <div className="relative  w-full h-full shrink-0 p-6 flex items-center  gap-5 max-w-screen mx-auto pt-[6%]  ">
+                <div className="w-[50%] h-[75vh]  relative flex justify-center items-center overflow-hidden">
+                    <div className=" w-[30rem] h-[30rem] rounded-full bg-teal-600 bg-opacity-80 absolute -bottom-20"></div>
 
-                <div className=" md:relative z-20 absolute left-0 top-0 md:w-[60%] w-[90%] h-screen  rounded-md pt-20 px-6 ">
+                    <div className=" w-[24rem] h-[24rem] flex justify-center items-center rounded-full bg-teal-600 bg-opacity-30 absolute right-24">
+                    <div className=" w-[20rem] h-[20rem] rounded-full bg-teal-600 bg-opacity-80 backdrop-blur-[1px] absolute right-10"></div>
+
+                    </div>
+                    <Image src={hero1} alt="hero" className=" absolute bottom-0 w-[36rem]"/>
+
+                </div>
+                <div className="w-[50%] h-[75vh]  relative flex justify-center flex-col items-center overflow-hidden">
+
+                   <div className=" relative flex flex-col  pl-[13%] text-[3.7rem] leading-[3.4rem] tracking-tight font-semibold text-zinc-950">
+                        <h1 className=" text-[1.6rem] mb-2 w-auto flex gap-2 uppercase text-teal-600 font-semibold  text-start"><span>Accelerate</span> <span>Your</span> <span>Career</span> <span>Growth</span></h1>
+                    <h1>Empowering</h1>
+                    <h1>Future IT Professionals</h1>
+                    <p className=" text-[1.3rem]   text-zinc-700  leading-6 mt-4 w-[70%] text-wrap">Unlock your potential with expert guidance tailored to help you land your dream job.
+                    Start your journey toward a brighter future today</p>
+                    <Link href="#contact"><div className="w-56 mt-5  group  h-10 rounded-full bg-teal-600 hover:bg-zinc-900 hover:bg-opacity-100 duration-300  bg-opacity-35 text-[1.1rem] flex items-center px-1 ">
+                                <div className="w-8 h-8 rounded-full group-hover:bg-zinc-100 bg-zinc-950 grid duration-300 place-items-center text-base group-hover:text-zinc-900 text-zinc-100 ">
+                                    <FaCalendarCheck/>
+                                </div>
+                                <h1 className={`${outfit.className} pl-3  tracking-wider text-zinc-900 group-hover:text-teal-500 duration-300`}>Book Your Future</h1>
+                            </div></Link>
+                   </div>
+
+                </div>
+                {/* <div className=" md:relative z-20 absolute left-0 top-0 md:w-[60%] w-[90%] h-screen  rounded-md pt-20 px-6 ">
 
                     <div className="flex md:opacity-100 md:scale-100 scale-0 opacity-0 flex-col items-start relative">
                         <div className={`uppercase  tracking-wider w-[50%] leading-5 text-[1.2rem] flex items-center gap-1 relative ${kanit.className}`}>
                             <span className="smallLeftname">Gain internships </span>
                             <div className="w-32 h-4 smallLeftnameDiv origin-left rounded-full border-2 border-zinc-950"></div>
-                            <Image 
-                                src={start} 
-                                alt="star" 
-                                className=" start absolute right-0 w-20 -top-8"
-                            />
+                            
                         </div>
                         <div className={`uppercase tracking-wider w-[35%] leading-5 text-[1.2rem] flex flex-wrap ${kanit.className}`}>
                         {"and secure placements to kickstart your career in the IT industry!".split(' ').map((char, index) => {
@@ -160,26 +183,40 @@ export default function HeroSection() {
                             priority
                         />
                     </div>
-                    <div className="absolute -left-24 top-16 w-[15rem] h-auto hidden md:flex items-center gap-2 globeBg origin-left  bg-zinc-100 rounded-xl px-3 py-1">
-                        <div className="w-14 h-[90%] shrink-0 rounded-xl flex items-center">
-                            <Image 
-                                src={globe} 
-                                alt="globe" 
-                                className=" globe w-full h-full object-contain"
-                            />
+                    
+                </div>  */}
+               
+            </div>
+            <div className=" w-[full h-[90vh]  relative flex justify-center items-center">
+                <div className=" w-[150%] h-full absolute rotate-[5deg] bg-zinc-100 px-4 flex items-center ">
+                    <div className=" w-[55%] border border-zinc-900 h-full  flex justify-between items-start relative ">
+                        <div className=" absolute w-1 top-0 left-[50%] -rotate-[5deg] h-[8rem] border border-teal-600 bg-teal-600 rounde-b-md ">
+                            <div className=" absolute bottom-0 left-3 flex flex-col">
+                                <div className=" w-10 h-10 rounded-full bg-teal-600 text-[1.8rem]  grid place-items-center  absolute  -left-16 text-zinc-100">1</div>
+                                <h1 className=" w-[40%] text-semibold leading-5 text-[1.2rem]">Personalized Career Coaching</h1>
+                            </div>
+                            <div className="absolute -bottom-[1.9rem] -left-4 text-[2rem]  text-teal-600"><GrRadialSelected/></div>
                         </div>
-                        <h1 className={`${kanit.className} globText text-zinc-600 tracking-wide font-[500] text-base leading-4 uppercase`}>
-                            Shaping careers, one student at a time.
-                        </h1>
-                        <div className=" bell w-11 h-11 rounded-full bg-zinc-100 grid place-items-center overflow-hidden absolute -left-6 -top-6">
-                            <Image 
-                                src={bell} 
-                                alt="notification" 
-                                className="w-8"
-                            />
+                        <div className=" absolute w-1 top-0 left-[65%] -rotate-[5deg] h-[16rem] border border-teal-600 bg-teal-600 rounde-b-md">
+                        <div className=" absolute bottom-0 left-3 flex flex-col ">
+                        <div className=" w-10 h-10 rounded-full bg-teal-600 text-[1.8rem]  grid place-items-center  absolute  -left-16 text-zinc-100">2</div>
+                                <h1 className=" w-[40%] text-semibold leading-5 text-[1.2rem]">Skill Enhancement Resources</h1>
+                            </div>
+                            <div className="absolute -bottom-[1.9rem] -left-4 text-[2rem]  text-teal-600"><GrRadialSelected/></div>
+
                         </div>
+                        <div className=" absolute w-1 top-0 left-[80%] -rotate-[5deg] h-[30rem] border border-teal-600 bg-teal-600 rounde-b-md">
+                        <div className=" absolute bottom-0 left-3 flex flex-col ">
+                        <div className=" w-10 h-10 rounded-full bg-teal-600 text-[1.8rem]  grid place-items-center  absolute  -left-16 text-zinc-100">3</div>
+
+                                <h1 className=" w-[43%] text-semibold leading-5 text-[1.2rem]">Job & Internship Matching</h1>
+                            </div>
+                            <div className="absolute -bottom-[1.9rem] -left-4 text-[2rem]  text-teal-600"><GrRadialSelected/></div>
+
+                        </div>
+
                     </div>
-                </div> 
+                </div>
             </div>
         </div>
     )

@@ -121,12 +121,12 @@ export default function FacultyAndLEaders(){
     ]
     return(
         <div className="  w-full bg-gradient-to-br from-sky-300 flex flex-col gap-5  items-center via-orange-200 to-sky-300">
-            <h1 className=" text-[2.4rem] font-[500] py-3">Our Expert Leadership and Faculty</h1>
+            <h1 className=" text-[2.4rem] text-center leading-9 font-[500] py-3">Our Expert Leadership and Faculty</h1>
             <div className="w-[90%] h-auto bg-zinc-900 rounded-3xl py-6 space-y-6 ">
                 
                 <div className=" w-[100%] py-6  flex flex-col items-center justify-center">
                 <h1 className=" text-[2.2rem] font-[500] text-transparent bg-clip-text bg-gradient-to-r from-sky-300 via-orange-200 to-sky-300">Visionary Leaders</h1>
-                <p className=" text-[1.3rem] text-center text-zinc-300 w-[50%] relative mt-5">Guided by experienced leaders, we drive innovation and excellence to shape a brighter future in IT education and training.</p>
+                <p className=" text-[1rem] md:text-[1.3rem] text-center text-zinc-300 w-[90%] md:w-[50%] relative mt-5">Guided by experienced leaders, we drive innovation and excellence to shape a brighter future in IT education and training.</p>
                 </div>
                 <div className=" relative w-full h-auto py-3 mt-6 flex justify-center gap-16 items-center flex-wrap">
                     {leaders.map((each,index)=>{
@@ -161,7 +161,7 @@ export default function FacultyAndLEaders(){
 
                 <div className=" w-[100%] py-6  flex flex-col items-center justify-center">
                 <h1 className=" text-[2.2rem] font-[500] text-transparent bg-clip-text bg-gradient-to-r from-sky-300 via-orange-200 to-sky-300">Expert Faculty</h1>
-                <p className=" text-[1.3rem] text-center text-zinc-300 w-[50%] relative mt-5">Learn from industry experts who bring real-world knowledge and passion to every session, ensuring your success.</p>
+                <p className=" text-[1rem] md:text-[1.3rem] text-center text-zinc-300 w-[90%] md:w-[50%] relative mt-5">Learn from industry experts who bring real-world knowledge and passion to every session, ensuring your success.</p>
                 </div>
                 <div className=" relative w-full h-auto py-3 md:px-[10%] mt-6 flex flex-wrap justify-center gap-x-16 gap-y-14 items-center">
                     {faculty.map((eachFaculty,index)=>{

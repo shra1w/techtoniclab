@@ -54,7 +54,7 @@ export default function PartnerSection() {
       </h1>
       <div className='max-w-[100%] h-auto relative mt-10 mb-10'>
         <div id='partner-logo' className="scroll-container w-auto h-full">
-          <div id='logdiv' className="scroll-content gap-8 md:gap-16 flex">
+          <div id='logdiv' className="scroll-content gap-2 md:gap-16 flex">
             <div className="flex items-center justify-center shrink-0">
               <Image src={synechron} alt='Synechron' width={200} height={100} className="max-w-[60%] md:max-w-[20rem]" />
             </div>

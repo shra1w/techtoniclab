@@ -7,6 +7,7 @@ import AnimatedButton from "./CustomButton";
 import { IoMdSunny } from "react-icons/io";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import logo1 from "@/app/assets/Logo/Techtonic-Lablogo.svg"
 
 const oswald = Oswald({
   weight: ['400','500','600','700'],
@@ -19,6 +20,10 @@ export default function HeaderSection() {
     
     useGSAP(()=>{
         const headTl=gsap.timeline()
+        headTl.from(".headblackbg",{
+            scaleX:0,
+            duration:0.8,
+        })
         headTl.from(".logo",{
             y:-50,
             opacity:0,
@@ -45,43 +50,24 @@ export default function HeaderSection() {
     },[])
 
     return (
-        <header className="w-screen h-auto py-3 px-3 md:px-8 z-40 fixed left-0 top-0  flex justify-between backdrop-blur-sm ">
+        <header className="w-screen h-auto py-3 px-3 md:px-8 z-40 fixed top-0 left-0  pt-4  flex justify-center  ">
+            <div className=" headblackbg  origin-left flex justify-between items-center bg-zinc-900 py-2 rounded-md w-[90%] px-5">
             <div 
-                className="flex items-center gap-1 md:gap-3 logo"
-                onMouseEnter={() => setIsHovered(true)}
-                onMouseLeave={() => setIsHovered(false)}
+                className="flex items-center gap-1 md:gap-1 logo "
             >
-                <div className=" w-8 md:w-10">
-                    <Image src={dayLogo} alt="logo" className="w-full" />
+                <div className="   shrink-0">
+                    <Image src={logo1} alt="logo" width={60} className=" shrink-0" />
                 </div>
-                {isLoaded && (
-                    <h1 className={ ` text-[1.3rem] md:text-[1.9rem] md:text-zinc-900 text-zinc-100 font-[600] mb-1 tracking-tight flex overflow-hidden ${oswald.className}`}>
-                        {"Techtonic  Labs".split('').map((char, index) => (
-                            <span
-                                key={index}
-                                className={`transform transition-all ${
-                                    isHovered 
-                                        ? 'translate-x-0 opacity-100 scale-100 duration-300 origin-left visible' 
-                                        : '-translate-x-full opacity-0 scale-0 invisible'
-                                }`}
-                                style={{
-                                    transitionDelay: isHovered ? `${index * 50}ms` : '0ms'
-                                }}
-                            >
-                                {char}
-                            </span>
-                        ))}
-                    </h1>
-                )}
+               <h1 className=" text-[1.8rem] font-[500] text-zinc-100">Techtonic Labs</h1>
             </div>
             <div className=" flex items-center gap-2 md:gap-5">
             <AnimatedButton/>
             <div className=" mode">
-            <div className="  w-9 h-9 text-[1.2rem] text-zinc-800 cursor-pointer rounded-full hover:bg-zinc-200 duration-300 dark:bg-zinc-700 grid place-items-center">
-                <IoMdSunny/>
+
             </div>
             </div>
             </div>
+            
         </header>
     );
 }
