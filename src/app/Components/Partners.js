@@ -48,7 +48,7 @@ export default function PartnerSection() {
   });
 
   return (
-    <div className={`${outfit.className} w-full h-auto bg-zinc-900 flex flex-col items-center py-10 gap-5`}>
+    <div className={`${outfit.className} w-full h-auto z-50 bg-zinc-900 flex flex-col items-center py-10 gap-5`}>
       <h1 id='partner' className="partner w-[80%] md:w-[50%] text-[2rem] md:text-[3rem] text-zinc-100 tracking-wide text-center">
         Our Trusted  Partners
       </h1>
