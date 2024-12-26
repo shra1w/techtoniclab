@@ -3,6 +3,15 @@ import { useState } from "react";
 import LeadersCardDesign from "./LeadersCardDesign";
 import { IoClose } from "react-icons/io5";
 import { PiHandPointingFill } from "react-icons/pi";
+import Rupali from "@/app/assets/Profiles/Rupali_Wankhede.png"
+import shrawan from "@/app/assets/Profiles/Shrawan_Sir.png"
+import Dnyaneshwari from "@/app/assets/Profiles/Dnyaneshwari_Talekar.png"
+import ManishPimple_Sir from "@/app/assets/Profiles/ManishPimple_Sir.jpg"
+import Sneha_Khubalkar from "@/app/assets/Profiles/Sneha_Khubalkar.png"
+import Sudhir_Sir from "@/app/assets/Profiles/Sudhir_Sir.png"
+import Vivek_Sir from "@/app/assets/Profiles/Vivek_Sir.jpg"
+import Harshal_Sir from "@/app/assets/Profiles/Harshal_Sir.jpg"
+import Image from "next/image";
 
 export default function FacultyAndLEaders(){
     const [showDetails,setShowDetails]=useState(false)
@@ -25,7 +34,8 @@ export default function FacultyAndLEaders(){
  "Passionate about bridging the gap between academia and industry, I have consistently fostered growth in both technical expertise and leadership, ensuring that students and clients alike receive high-quality, impactful guidance.",
 "Whether delivering cutting-edge ERP solutions, developing academic curricula, or providing expert IT consulting, I am committed to driving transformation and helping organizations and individuals thrive in the digital era."
 
-            ]
+            ],
+            image:Rupali
 
         },
         {
@@ -38,7 +48,8 @@ export default function FacultyAndLEaders(){
                 "My experience spans managing recruitment processes, driving employee development programs, and creating talent acquisition strategies that address both current and future organizational needs.",
                 "I am deeply passionate about supporting freshers and job seekers in realizing their professional aspirations, guiding them through the complexities of career development and securing their dream jobs.",
                 "By focusing on skill development, personalized coaching, and mentorship, I am dedicated to making a positive impact on individuals' careers, helping them navigate the job market with confidence and success."
-            ] 
+            ] ,
+            image:Dnyaneshwari
         },
         {
             name:"Sneha Khubalkar",
@@ -48,7 +59,8 @@ export default function FacultyAndLEaders(){
                 "I began my journey with two years of teaching experience in the IT field, where I honed my communication, mentoring, and technical skills. Subsequently, I gained two years of industrial experience in ERP, acquiring in-depth knowledge of enterprise processes and operational efficiency.",
                 "For the past four years, I have been thriving as a Designer Engineer, leveraging my technical acumen and problem-solving abilities to design innovative solutions that meet industry standards. My diverse expertise equips me with a unique perspective to deliver optimal outcomes in complex, multidisciplinary environments.",
                 "Driven by a passion for continuous learning and professional growth, I excel in blending my academic knowledge and practical experience to contribute effectively to organizational success."
-              ]
+              ],
+              image:Sneha_Khubalkar
         }
 
     ]
@@ -65,7 +77,8 @@ export default function FacultyAndLEaders(){
                 "AI & Machine Learning: Developed and deployed AI models, enterprise architectures (TOGAF), and data science infrastructures.",
                 "Data Migration & Optimization: Designed and executed data migration pipelines, backup systems, and performance tuning solutions.",
                 "Training & Consultancy: Conducted 100+ corporate training sessions across leading IT firms and developed comprehensive training programs."
-            ]
+            ],
+            image:ManishPimple_Sir
 
         },
         {
@@ -77,7 +90,8 @@ export default function FacultyAndLEaders(){
                 "Project Leadership & Business Strategy: Successfully led project and operations teams, conducted workshops, aligned project scope, and delivered innovative solutions to meet business goals. Identified opportunities for business expansion and organizational restructuring to optimize processes.",
                 "Academic Excellence: Holds a Master’s in Supply Chain Management from Mumbai University and a B.Tech in Petrochemical Engineering from Amravati University, blending technical proficiency with strategic supply chain expertise.",
                 "End-to-End Solution Delivery: Adept at collaborating with stakeholders, addressing business needs, and implementing best-in-class solutions to achieve operational excellence and business transformation."
-              ]
+              ],
+              image:shrawan
         },
         
         
@@ -90,7 +104,8 @@ export default function FacultyAndLEaders(){
                 "Corporate Grooming & Leadership Mentorship: A strong advocate for professional excellence, providing corporate training, career guidance, and leadership mentoring through structured internship programs and job assistance initiatives.",
                 "Holistic Approach to Professional Growth: Passionate about spirituality and holistic development, integrating these principles to inspire balanced growth, well-being, and improved organizational outcomes.",
                 "Educational & Technical Excellence: Holds an MBA from Mumbai University and a Petrochemical Engineering degree, leveraging technical knowledge and strategic insight to create impactful business solutions across diverse industries."
-              ]
+              ],
+              image:Sudhir_Sir
         },
         {
             name:"Harshal Sir",
@@ -101,7 +116,8 @@ export default function FacultyAndLEaders(){
                 "Supply Chain & Enterprise Architecture Expertise: Adept at designing and implementing effective supply chain solutions and enterprise architecture frameworks, ensuring seamless integration and scalability.",
                 "Educational Background in Engineering: Holds a B.E. in Mechanical Engineering from Nagpur University, blending technical knowledge with strategic insight to solve complex business challenges.",
                 "Innovative Problem Solver: Passionate about leveraging technology and strategic planning to deliver robust solutions that drive growth, streamline processes, and meet business objectives."
-              ]
+              ],
+              image:Harshal_Sir
         },
         {
             name:"Vivek Sir",
@@ -115,7 +131,8 @@ export default function FacultyAndLEaders(){
                 "At TECHTONIC-LAB, he is committed to bridging the gap between theory and practice, ensuring students not only master the essential tools of data analytics but also gain practical insights that prepare them for a successful career in the field.",
                 "His unique teaching style combines industry experience with a practical, hands-on approach, equipping students with the critical skills they need to thrive in today’s data-driven world.",
                 "Vivek's dedication to nurturing the next generation of data professionals has made him a valuable mentor and guide for aspiring data analysts."
-              ] 
+              ] ,
+              image:Vivek_Sir
         }
 
     ]
@@ -138,8 +155,15 @@ export default function FacultyAndLEaders(){
                         )   
                     })}
                 
-                {category===1&&<div className={` ${showDetails?"scale-x-100 opacity-100":" scale-x-0 opacity-0"}  overflow-hidden origin-left duration-500 md:w-[70vw] w-[90vw] rounded-xl h-screen md:h-[70vh] absolute flex md:flex-row flex-col gap-3 bg-gradient-to-tr from-sky-300 via-orange-200 to-sky-300 shadow-md shadow-zinc-800 p-5`}>
-                    <div className={`w-[40%] ${showDetails?"scale-100 opacity-100 delay-700":" scale-0 opacity-0"} h-full border bg-zinc-300 rounded-2xl`}></div>
+                {category===1&&<div className={` ${showDetails?"scale-x-100 opacity-100":" scale-x-0 opacity-0"}  overflow-hidden origin-left duration-500 md:w-[70vw] w-[90vw] rounded-xl h-screen md:h-[70vh] absolute flex md:flex-row flex-col gap-3 bg-zinc-100 shadow-md shadow-zinc-800 p-5`}>
+                    <div className={`w-[40%] relative ${showDetails ? "scale-100 opacity-100 delay-700" : "scale-0 opacity-0"} h-full border bg-zinc-300 rounded-2xl overflow-hidden`}>
+  <Image 
+    src={currentDetails.image} 
+    alt="profile" 
+    className="w-full h-full object-cover"
+    priority
+  />
+</div>
                     <div className= {`w-[60%] ${showDetails?"scale-100 opacity-100 delay-1000":" scale-0 opacity-0"} h-full py-2 px-3 flex flex-col items-center`} >
                         <h1 className=" text-zinc-950 font-semibold text-[2.6rem]">{currentDetails?.name}</h1>
                         <p className=" text-zinc-700 text-[1.2rem] text-center">{currentDetails?.tag}</p>

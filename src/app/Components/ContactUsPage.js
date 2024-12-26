@@ -6,6 +6,7 @@ import { BiSolidMessageAltError } from "react-icons/bi";
 import { IoMail } from "react-icons/io5";
 import { useState } from "react";
 import axios from "axios";
+import Link from "next/link";
 
 export default function ContactUsDetails(){
 
@@ -51,16 +52,15 @@ export default function ContactUsDetails(){
             <div className=" w-full min-h-screen  py-5 flex md:flex-row flex-col gap-4">
                 <div className=" w-[100%] md:w-[50%] h-full  py-4 pl-[5%]">
                     <h1 className=" text-[2rem] md:text-[3rem] font-[500] tracking-wide leading-7 ">We’d Love to Hear from You</h1>
-                    <p className=" text-[1rem] md:text-[1.2rem] text-zinc-700 w-[95%] text-center md:w-[80%]">Connect with Techtonic Lab to unlock opportunities: From certifications and expert consultancy to internships and placements, we're here to support your journey to success.</p>
+                    <p className=" text-[1rem] md:text-[1.2rem] text-zinc-700 w-[95%] leading-6 mt-8 text-center md:w-[80%]">Connect with Techtonic Lab to unlock opportunities: From certifications and expert consultancy to internships and placements, we're here to support your journey to success.</p>
                     <div className=" w-[70%] mt-10 h-auto">
                         <div className=" flex px-4 md:px-8 items-center gap-2 text-[1.4rem]">
                             <MdAttachEmail className=" text-[1.6rem] text-sky-700 shrink-0"/>
-                            <p className=" mb-1 hover:underline underline-offset-2 ">admin@techtoniccorporate.com</p>
-                        </div>
-                        <div className=" flex px-4 md:px-8 items-center gap-2 text-[1.4rem] mt-1 md:mt-3">
-                            <PiPhoneCallFill className=" text-[1.6rem] text-sky-700"/>
-                            <p className=" ">+91-8766069947</p>
-                        </div>
+                            <Link href={`mailto:admin@techtoniccorporate.com`}><div className="  hover:underline underline-offset-2  ">admin@techtoniccorporate.com</div></Link>                        </div>
+                            <div className=" flex px-8 items-center gap-2 text-[1.2rem] ">
+                                                    <PiPhoneCallFill className=" text-[1.4rem] text-sky-700"/>
+                                                    <Link href={`tel:admin@techtoniccorporate.com`}><div className=" ">+91-8766069947</div></Link>
+                                                </div>
                     </div>
                     <h2 className=" text-[1.3rem] leading-6 md:text-[1.4rem] w-full md:w-[70%] font-semibold md:leading-8 mt-10">We're here to support you—reach out to Techtonic Lab for certifications, consultancy, internships, and placement opportunities!</h2>
                     <div className=" md:block hidden"><div className=" flex items-center justify-center w-full h-auto pt-6 gap-3 md:gap-8">

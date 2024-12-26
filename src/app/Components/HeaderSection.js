@@ -60,6 +60,10 @@ export default function HeaderSection() {
                 </div>
                <h1 className=" text-[1.4rem] md:text-[1.8rem] font-[500]  text-zinc-100">Techtonic Labs</h1>
             </div>
+            <div className=" flex items-center pb-1 gap-6 cursor-pointer">
+                <div className=" relative flex justify-center items-center group">About Us <span className=" absolute -bottom-1 w-1 group-hover:w-full duration-500"></span></div>
+                
+            </div>
             <div className=" flex items-center gap-2 md:gap-5">
             <AnimatedButton/>
                 <div className=" mode">
