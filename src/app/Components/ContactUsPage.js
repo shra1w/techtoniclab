@@ -35,34 +35,31 @@ export default function ContactUsDetails(){
         
         const formdataNew={Email:formData.email,Name:`${formData.firstName} ${formData.lastName}`,Number:formData.phoneNumber,Description:formData.comment}
         const response = await axios.post('/api/sendEmail',formdataNew)
-        // console.log("Status","--->",response.status)
         if(response.status===200){
           console.log("SCUCESSS")
           setSendLoader(false)
-            // toast.success('Email Send Succesfully')
         }
         else{
             console.log("FAIELD:EDE:D")
             setSendLoader(false)
-            // toast.error("Cannot send Email")
         }
        
     }
     return(
         <div id="contact" className=" w-full min-h-screen bg-gradient-to-tr from-sky-300 via-orange-200 to-sky-300 px-3 py-10 flex items-center flex-col gap-6 ">
             <h1 className=" text-[2.6rem] text-center leading-[2.7rem] font-semibold tracking-wider mt-10">Let’s Build the Future Together</h1>
-            <div className=" w-full min-h-screen  border-zinc-950 py-5 flex md:flex-row flex-col gap-4">
+            <div className=" w-full min-h-screen  py-5 flex md:flex-row flex-col gap-4">
                 <div className=" w-[100%] md:w-[50%] h-full  py-4 pl-[5%]">
                     <h1 className=" text-[2rem] md:text-[3rem] font-[500] tracking-wide ">We’d Love to Hear from You</h1>
                     <p className=" text-[1rem] md:text-[1.2rem] text-zinc-700 w-[80%]">Connect with Techtonic Lab to unlock opportunities: From certifications and expert consultancy to internships and placements, we're here to support your journey to success.</p>
                     <div className=" w-[70%] mt-10 h-auto">
-                        <div className=" flex px-8 items-center gap-2 text-[1.4rem]">
-                            <MdAttachEmail className=" text-[1.6rem] text-sky-700"/>
-                            <p className=" mb-1 hover:underline underline-offset-2 ">demo@tectoniclab.tech</p>
+                        <div className=" flex px-4 md:px-8 items-center gap-2 text-[1.4rem]">
+                            <MdAttachEmail className=" text-[1.6rem] text-sky-700 shrink-0"/>
+                            <p className=" mb-1 hover:underline underline-offset-2 ">admin@techtoniccorporate.com</p>
                         </div>
-                        <div className=" flex px-8 items-center gap-2 text-[1.4rem] mt-3">
+                        <div className=" flex px-4 md:px-8 items-center gap-2 text-[1.4rem] mt-3">
                             <PiPhoneCallFill className=" text-[1.6rem] text-sky-700"/>
-                            <p className=" ">378217-321-312-32-2321-312</p>
+                            <p className=" ">+91-8766069947</p>
                         </div>
                     </div>
                     <h2 className=" text-[1.3rem] leading-6 md:text-[1.4rem] w-full md:w-[70%] font-semibold md:leading-8 mt-10">We're here to support you—reach out to Techtonic Lab for certifications, consultancy, internships, and placement opportunities!</h2>
@@ -86,8 +83,8 @@ export default function ContactUsDetails(){
 
                     </div></div>
                 </div>
-                <div className=" w-[100%] md:w-[50%] h-full  py-4 pl-[5%] flex ">
-                    <div className=" w-[90%] h-[100%] rounded-xl  shadow-md shadow-orange-400 py-8 px-5 bg-sky-700 bg-opacity-35 backdrop-blur-md flex flex-col items-center  ">
+                <div className=" w-[100%] md:w-[50%] h-full  py-4 md:pl-[5%] flex ">
+                    <div className=" w-full md:w-[90%] h-[100%] rounded-xl  shadow-md shadow-orange-400 py-8 px-5 bg-sky-700 bg-opacity-35 backdrop-blur-md flex flex-col items-center  ">
                         <h1 className=" text-[2.5rem] md:text-[3rem]  font-semibold text-transparent bg-clip-text bg-gradient-to-r from-sky-700 via-orange-700 to-zinc-900 text-center">Get in Touch</h1>
                         <p className=" w-[90%] text-[1rem] tracking-wide leading-5">You can reach out to us anytime, 24/7! Whether you have questions, need assistance, or want to share your feedback, our team is always here to support you, day or night.</p>
                         <form onSubmit={handleSubmit} className="pt-14 space-y-5">
@@ -97,7 +94,7 @@ export default function ContactUsDetails(){
                     name="firstName"
                     value={formData.firstName}
                     onChange={handleChange}
-                    className="px-3 py-2 outline-none md:w-[16rem] w-[20rem] rounded-md bg-zinc-300"
+                    className="px-3 py-2 outline-none md:w-[16rem] w-[20rem] rounded-md bg-zinc-100"
                     placeholder="First Name"
                 />
                 <input
@@ -105,7 +102,7 @@ export default function ContactUsDetails(){
                     name="lastName"
                     value={formData.lastName}
                     onChange={handleChange}
-                    className="px-3 py-2 outline-none md:w-[16rem] w-[20rem] rounded-md bg-zinc-300"
+                    className="px-3 py-2 outline-none md:w-[16rem] w-[20rem] rounded-md bg-zinc-100"
                     placeholder="Last Name"
                 />
             </div>
@@ -116,7 +113,7 @@ export default function ContactUsDetails(){
                     name="email"
                     value={formData.email}
                     onChange={handleChange}
-                    className="pl-9 w-full px-3 py-2 rounded-md bg-zinc-300"
+                    className="pl-9 w-full px-3 py-2 rounded-md bg-zinc-100"
                     placeholder="Email"
                 />
             </div>
@@ -127,7 +124,7 @@ export default function ContactUsDetails(){
                     name="phoneNumber"
                     value={formData.phoneNumber}
                     onChange={handleChange}
-                    className="w-full px-3 py-2 rounded-md bg-zinc-300 pl-9"
+                    className="w-full px-3 py-2 rounded-md bg-zinc-100 pl-9"
                     placeholder="Phone Number"
                 />
             </div>
@@ -135,7 +132,7 @@ export default function ContactUsDetails(){
                 name="comment"
                 value={formData.comment}
                 onChange={handleChange}
-                className="w-full h-[20vh] rounded-md bg-zinc-300 px-4 py-2"
+                className="w-full h-[20vh] rounded-md bg-zinc-100 px-4 py-2"
                 placeholder="Comment"
             />
 

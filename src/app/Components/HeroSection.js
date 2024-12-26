@@ -144,8 +144,8 @@ export default function HeroSection() {
                
             </div>
             <div className=" w-[full h-[90vh]  relative flex justify-center items-center">
-                <div className=" w-[150%] h-full absolute rotate-[5deg] bg-zinc-100 px-4 flex items-center ">
-                    <div className=" w-[55%]  h-full  flex justify-between items-start relative ">
+                <div className=" w-[150%] h-full absolute rotate-[5deg] bg-zinc-100 px-4 flex md:flex-row flex-col-reverse items-center  ">
+                    <div className="  w-[55%]  h-full  flex justify-between items-start relative ">
                         <div className=" absolute w-1 top-0 left-[50%] -rotate-[5deg] h-[8rem] border border-teal-600 bg-teal-600 rounde-b-md ">
                             <div className=" absolute -bottom-16 left-6 flex flex-col">
                                 <Image src={leadership} alt="leader" className=" w-16"/>
@@ -175,9 +175,9 @@ export default function HeroSection() {
                         </div>
 
                     </div>
-                    <div className=" w-[50%] h-full  flex flex-col justify-center items-start pl-[5%] -rotate-[5deg] mb-20">
+                    <div className=" w-[100%] md:w-[50%] h-full  flex flex-col justify-center items-start  md:pl-[5%] -rotate-[5deg] md:mb-20">
                         <h1 className=" text-[1.5rem] text-zinc-900">Land Your Dream Job</h1>
-                        <h1 className=" text-[3rem] font-semibold text-teal-700 uppercase">In just 3 steps</h1>
+                        <h1 className=" text-[3rem] font-semibold text-teal-700 uppercase leading-[2.7rem]">In just 3 steps</h1>
                         <p className=" text-[1.2rem] w-[50%]">"Simple, Guided, and Effective—
                         Your Career Breakthrough Starts Here with Expert Support and Proven Strategies!"</p>
                         <Link href="#contact"><div className="w-56 mt-5  group   h-11 rounded-full bg-teal-600 hover:bg-zinc-900 hover:bg-opacity-100 duration-300  bg-opacity-35 text-[1.1rem] flex items-center px-1 ">

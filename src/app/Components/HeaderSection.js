@@ -56,14 +56,13 @@ export default function HeaderSection() {
                 className="flex items-center gap-1 md:gap-1 logo "
             >
                 <div className="   shrink-0">
-                    <Image src={logo1} alt="logo" width={60} className=" shrink-0" />
+                    <Image src={logo1} alt="logo"  className=" w-[50px]  md:w-[60px] shrink-0" />
                 </div>
-               <h1 className=" text-[1.8rem] font-[500] text-zinc-100">Techtonic Labs</h1>
+               <h1 className=" text-[1.4rem] md:text-[1.8rem] font-[500]  text-zinc-100">Techtonic Labs</h1>
             </div>
             <div className=" flex items-center gap-2 md:gap-5">
             <AnimatedButton/>
-            <div className=" mode">
-
+                <div className=" mode">
             </div>
             </div>
             </div>

@@ -12,7 +12,7 @@ const AnimatedButton = () => {
   type="submit"
   className=" flex justify-center gap-3 text-nowrap items-center mx-auto shadow-xl text-[0.7rem] md:text-[1rem] tracking-wider bg-gray-50 backdrop-blur-md lg:font-semibold isolation-auto border-sky-200 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-sky-500 hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-3 md:px-4 py-1 md:py-1 overflow-hidden border rounded-full group"
 >
-  Reach out to us
+  <span className=' md:block hidden'>Reach out to us</span>
   <svg
     className="w-8 h-8 justify-end group-hover:rotate-90 group-hover:bg-gray-50 text-gray-50 ease-linear duration-300 rounded-full border border-gray-700 group-hover:border-none p-2 rotate-45"
     viewBox="0 0 16 19"
