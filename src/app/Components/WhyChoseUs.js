@@ -67,7 +67,6 @@ export default function WhyChooseUS(){
           trigger: ".subheadAboutCard",
           start: "top 35%",
           end: "top 35%",
-          markers:true
         }
       });
   });

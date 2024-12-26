@@ -9,7 +9,7 @@ import { MdLocalActivity } from "react-icons/md";
 export default function OurCourses(){
     const [section,setSection]=useState("section1")
     return(
-        <div className=" w-full min-h-screen bg-gradient-to-tr from-sky-300 flex flex-col gap-5  items-center via-orange-200 to-sky-300 px-3 py-10">
+        <div className=" w-full min-h-screen  flex flex-col gap-5  items-center bg-teal-700 bg-opacity-15 px-3 py-10">
             <h1 className=" text-[2.5rem] font-[500]">Our Expertise</h1>
             <p className=" text-[0.9rem] md:text-[1.2rem] w-[90%] md:w-[80%] text-center">At Techtonic-Lab, we drive business transformation with IT consulting, SAP integration, and data analytics. Our expert team leverages technology to simplify digital transformation, optimize processes, and unlock data's full potential.</p>
             <div className=" w-full h-aut0 pt-8 space-y-2">

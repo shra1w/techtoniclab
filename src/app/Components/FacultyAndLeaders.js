@@ -120,7 +120,7 @@ export default function FacultyAndLEaders(){
 
     ]
     return(
-        <div className="  w-full bg-gradient-to-br from-sky-300 flex flex-col gap-5  items-center via-orange-200 to-sky-300">
+        <div className="  w-full bg-teal-700 bg-opacity-15 flex flex-col gap-5  items-center ">
             <h1 className=" text-[2.4rem] text-center leading-9 font-[500] py-3">Our Expert Leadership and Faculty</h1>
             <div className="w-[90%] h-auto bg-zinc-900 rounded-3xl py-6 space-y-6 ">
                 
