@@ -57,7 +57,6 @@ export default function HeroSection() {
             trigger: ".sticks",
             start: "top 40%",
             end: "top 40%",
-            markers:true
           }
         });
         gsap.from(".stick-cont", {
@@ -69,7 +68,6 @@ export default function HeroSection() {
               trigger: ".stick-cont",
               start: "top 40%",
               end: "top 40%",
-              markers:true
             }
           });
           gsap.from(".stick-contRight", {

@@ -44,14 +44,7 @@ export default function HeaderSection() {
             duration:0.4
         })
     })
-    useEffect(() => {
-        setIsLoaded(true);
-    }, []);
-    useEffect(()=>{
-        setTimeout(()=>{
-            setIsHovered(false)
-        },3000)
-    },[])
+   
 
     return (
         <header className="w-screen h-auto py-3 px-3 md:px-8 z-40 fixed top-0 left-0  pt-4  flex justify-center  ">
@@ -65,11 +58,11 @@ export default function HeaderSection() {
                <h1 className=" text-[1.4rem] md:text-[1.8rem] font-[500]  text-zinc-100">Techtonic Labs</h1>
             </div>
             <div className=" hidden md:flex items-center pb-1 gap-7 cursor-pointer text-zinc-100">
-                <div className=" relative flex justify-center items-center group">About Us <span className=" absolute -bottom-1 w-3 group-hover:w-full border border-teal-600 duration-500"></span></div>
+            <Link href="/about" ><div className={`relative flex justify-center items-center group ${path==="/about"&&" text-teal-500"}`}>About Us <span className= {`absolute -bottom-1   border ${path==="/about"?"w-full text-teal-500":"w-3 group-hover:w-full"} border-teal-600 duration-500`}></span></div></Link>
                 <Link href="/carrers" >
                 <div className={`relative flex justify-center items-center group tracking-wider ${path==="/carrers"&&" text-teal-500"}`}>Carrers <span className={`absolute ${path==="/carrers"?"w-full text-teal-500":"w-3 group-hover:w-full"} -bottom-1   border border-teal-600 duration-500`}></span></div>
                 </Link>
-                <div className=" relative flex justify-center items-center group tracking-wider">Why choose us? <span className=" absolute -bottom-1 w-3 group-hover:w-full border border-teal-600 duration-500"></span></div>
+                <Link href="/#whyus"><div className=" relative flex justify-center items-center group tracking-wider">Why choose us? <span className=" absolute -bottom-1 w-3 group-hover:w-full border border-teal-600 duration-500"></span></div></Link>
 
             </div>
             <div className=" flex items-center gap-2 md:gap-5">
@@ -81,9 +74,9 @@ export default function HeaderSection() {
             </div>
             <div className={` ${miniNav?"h-auto py-3 pb-6 duration-200":"h-0"} w-full left-0 overflow-hidden absolute top-[102%] rounded-md  bg-zinc-100  z-20`}>
                 <div className={` ${miniNav?" scale-100 duration-300 delay-300  ":" scale-0"} origin-top w-full h-auto flex flex-col items-center gap-3`} >
-                    <div className=" w-[90%] h-16 border-b border-zinc-800 flex items-center text-[2rem] pl-4">About Us</div>
-                    <div className=" w-[90%] h-16 border-b border-zinc-800 flex items-center text-[2rem] pl-4">Carrers</div>
-                    <div className=" w-[90%] h-16 border-b border-zinc-800 flex items-center text-[2rem] pl-4">Why Choose Us?</div>
+                <Link href="/about" ><div className=" w-[90%] h-16 border-b border-zinc-800 flex items-center text-[2rem] pl-4">About Us</div></Link>
+                <Link href="/carrers" ><div className=" w-[90%] h-16 border-b border-zinc-800 flex items-center text-[2rem] pl-4">Carrers</div></Link>
+                <Link href="/#whyus"><div className=" w-[90%] h-16 border-b border-zinc-800 flex items-center text-[2rem] pl-4">Why Choose Us?</div></Link>
 
                    
 

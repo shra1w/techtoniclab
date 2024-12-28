@@ -3,13 +3,13 @@ import { MdAddLocationAlt } from "react-icons/md";
 import { FaTags } from "react-icons/fa";
 import { IoArrowUpCircleOutline } from "react-icons/io5";
 
-export default function EachJobOpening({eachJob}){
+export default function EachJobOpening({eachJob,setCarrerContact}){
     return(
 
 
 
 <>
-<div className=" md:block hidden w-full">
+<div className=" md:block hidden w-full" onClick={()=>setCarrerContact(true)}>
 <div className=" mx-auto  w-[90%] h-[11rem] border bg-zinc-100 border-zinc-300  duration-300 group rounded-lg grid mb-4 p-1" 
             style={{ gridTemplateColumns: '40% 20% 30% 10%' }}>
             <div className="">
@@ -41,7 +41,7 @@ export default function EachJobOpening({eachJob}){
             </div>
         </div>
         </div>
-<div className="md:hidden block w-[22rem] p-2 h-[16rem] rounded-lg border border-zinc-300 bg-zinc-100">
+<div className="md:hidden block w-[22rem] p-2 h-[16rem] rounded-lg border border-zinc-300 bg-zinc-100" onClick={()=>setCarrerContact(true)}>
     <div className=" w-full flex  items-center gap-2 text-zinc-600">
         <MdAddLocationAlt/> {eachJob.location}
     </div>
