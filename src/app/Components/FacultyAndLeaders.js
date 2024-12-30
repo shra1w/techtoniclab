@@ -6,7 +6,7 @@ import { PiHandPointingFill } from "react-icons/pi";
 import Rupali from "@/app/assets/Profiles/Rupali_Wankhede.png"
 import shrawan from "@/app/assets/Profiles/Shrawan_Sir.png"
 import Dnyaneshwari from "@/app/assets/Profiles/Dnyaneshwari_Talekar.png"
-import ManishPimple_Sir from "@/app/assets/Profiles/ManishPimple_Sir.jpg"
+import ManishPimple_Sir from "@/app/assets/Profiles/ManishPimple_Sir.jpeg"
 import Sneha_Khubalkar from "@/app/assets/Profiles/Sneha_Khubalkar.png"
 import Sudhir_Sir from "@/app/assets/Profiles/Sudhir_Sir.png"
 import Vivek_Sir from "@/app/assets/Profiles/Vivek_Sir.jpg"
