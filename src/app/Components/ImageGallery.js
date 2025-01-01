@@ -10,7 +10,7 @@ const ImageCarousel = () => {
   const images = [
     { src: class1, alt: 'First slide' },
     { src: class2, alt: 'Second slide' },
-    { src:class3, alt: 'Third slide' }
+    { src: class3, alt: 'Third slide' }
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -26,14 +26,20 @@ const ImageCarousel = () => {
   };
 
   return (
-    <div className="relative w-full  mx-auto p-4">
-      <div className="relative aspect-video bg-gray-100  ">
+    <div className="relative w-full mx-auto p-4">
+      <div className="relative aspect-video bg-gray-100">
         {/* Current Image */}
-        <Image
-          src={images[currentIndex].src}
-          alt={images[currentIndex].alt}
-          className="w-full h-full object-cover"
-        />
+        <div className="relative w-full h-full">
+          <Image
+            src={images[currentIndex].src}
+            alt={images[currentIndex].alt}
+            fill
+            priority
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
+            className="object-cover"
+            quality={85}
+          />
+        </div>
 
         {/* Navigation Buttons */}
         <button
@@ -41,7 +47,7 @@ const ImageCarousel = () => {
           className="absolute -left-6 md:-left-14 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/80 hover:bg-white shadow-lg transition-all"
           aria-label="Previous slide"
         >
-          <BsArrowLeftCircleFill className=' text-[2rem] md:text-[3rem] text-blue-600'/>
+          <BsArrowLeftCircleFill className="text-[2rem] md:text-[3rem] text-blue-600"/>
         </button>
         
         <button
@@ -49,8 +55,7 @@ const ImageCarousel = () => {
           className="absolute -right-6 md:-right-14 top-1/2 -translate-y-1/2 p-2 rounded-full bg-white/80 hover:bg-white shadow-lg transition-all"
           aria-label="Next slide"
         >
-          <BsArrowLeftCircleFill className='  text-[2rem] rotate-180 md:text-[3rem] text-blue-600'/>
-
+          <BsArrowLeftCircleFill className="text-[2rem] rotate-180 md:text-[3rem] text-blue-600"/>
         </button>
 
         {/* Slide Indicators */}

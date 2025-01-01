@@ -35,7 +35,7 @@ export default function FacultyAndLEaders(){
 "Whether delivering cutting-edge ERP solutions, developing academic curricula, or providing expert IT consulting, I am committed to driving transformation and helping organizations and individuals thrive in the digital era."
 
             ],
-            image:Rupali
+            profile:Rupali
 
         },
         {
@@ -49,7 +49,7 @@ export default function FacultyAndLEaders(){
                 "I am deeply passionate about supporting freshers and job seekers in realizing their professional aspirations, guiding them through the complexities of career development and securing their dream jobs.",
                 "By focusing on skill development, personalized coaching, and mentorship, I am dedicated to making a positive impact on individuals' careers, helping them navigate the job market with confidence and success."
             ] ,
-            image:Dnyaneshwari
+            profile:Dnyaneshwari
         },
         {
             name:"Sneha Khubalkar",
@@ -60,7 +60,7 @@ export default function FacultyAndLEaders(){
                 "For the past four years, I have been thriving as a Designer Engineer, leveraging my technical acumen and problem-solving abilities to design innovative solutions that meet industry standards. My diverse expertise equips me with a unique perspective to deliver optimal outcomes in complex, multidisciplinary environments.",
                 "Driven by a passion for continuous learning and professional growth, I excel in blending my academic knowledge and practical experience to contribute effectively to organizational success."
               ],
-              image:Sneha_Khubalkar
+              profile:Sneha_Khubalkar
         }
 
     ]
@@ -68,7 +68,7 @@ export default function FacultyAndLEaders(){
     const faculty=[
         {
             name:"Manish Pimpale Sir",
-            tag:"25+ years in IT, database management, AI, cloud solutions.",
+            tag:"27+ years in IT, database management, AI, cloud solutions.",
             content:[
                 "A seasoned IT professional with over 25 years of experience in database management, cloud data solutions, artificial intelligence, and enterprise architecture.",
                 "Renowned for designing and implementing data-driven strategies, this expert has successfully delivered solutions in complex domains such as banking, retail, and finance.",
@@ -78,7 +78,7 @@ export default function FacultyAndLEaders(){
                 "Data Migration & Optimization: Designed and executed data migration pipelines, backup systems, and performance tuning solutions.",
                 "Training & Consultancy: Conducted 100+ corporate training sessions across leading IT firms and developed comprehensive training programs."
             ],
-            image:ManishPimple_Sir
+            profile:ManishPimple_Sir
 
         },
         {
@@ -91,13 +91,13 @@ export default function FacultyAndLEaders(){
                 "Academic Excellence: Holds a Master’s in Supply Chain Management from Mumbai University and a B.Tech in Petrochemical Engineering from Amravati University, blending technical proficiency with strategic supply chain expertise.",
                 "End-to-End Solution Delivery: Adept at collaborating with stakeholders, addressing business needs, and implementing best-in-class solutions to achieve operational excellence and business transformation."
               ],
-              image:shrawan
+              profile:shrawan
         },
         
         
         {
             name:"Sudhir Sir",
-            tag:"10+ years in business intelligence, strategy, client relations, leadership.",
+            tag:"12+ years in business intelligence, strategy, client relations, leadership.",
             content:[
                 "Extensive Experience in Strategic Decision-Making: Over a decade of expertise in business intelligence, market research, and corporate strategy, driving growth and innovation as a Category Lead for a global MNC across FMCG, Pharma, and Automobile sectors.",
                 "Global Client Relations & Business Development: Successfully built and managed client relationships in US, UK, Russia, Poland, Spain, and India, delivering customized solutions and fostering long-term partnerships that contribute to sustained business growth.",
@@ -105,7 +105,7 @@ export default function FacultyAndLEaders(){
                 "Holistic Approach to Professional Growth: Passionate about spirituality and holistic development, integrating these principles to inspire balanced growth, well-being, and improved organizational outcomes.",
                 "Educational & Technical Excellence: Holds an MBA from Mumbai University and a Petrochemical Engineering degree, leveraging technical knowledge and strategic insight to create impactful business solutions across diverse industries."
               ],
-              image:Sudhir_Sir
+              profile:Sudhir_Sir
         },
         {
             name:"Harshal Sir",
@@ -117,7 +117,7 @@ export default function FacultyAndLEaders(){
                 "Educational Background in Engineering: Holds a B.E. in Mechanical Engineering from Nagpur University, blending technical knowledge with strategic insight to solve complex business challenges.",
                 "Innovative Problem Solver: Passionate about leveraging technology and strategic planning to deliver robust solutions that drive growth, streamline processes, and meet business objectives."
               ],
-              image:Harshal_Sir
+              profile:Harshal_Sir
         },
         {
             name:"Vivek Sir",
@@ -132,7 +132,7 @@ export default function FacultyAndLEaders(){
                 "His unique teaching style combines industry experience with a practical, hands-on approach, equipping students with the critical skills they need to thrive in today’s data-driven world.",
                 "Vivek's dedication to nurturing the next generation of data professionals has made him a valuable mentor and guide for aspiring data analysts."
               ] ,
-              image:Vivek_Sir
+              profile:Vivek_Sir
         }
 
     ]
@@ -158,7 +158,7 @@ export default function FacultyAndLEaders(){
                 {category===1&&<div className={` ${showDetails?"scale-x-100 opacity-100":" scale-x-0 opacity-0"}  overflow-hidden origin-left duration-500 md:w-[70vw] w-[90vw] rounded-xl h-screen md:h-[70vh] absolute flex md:flex-row flex-col gap-3 bg-zinc-100 shadow-md shadow-zinc-800 p-5`}>
                     <div className={`w-[40%] relative ${showDetails ? "scale-100 opacity-100 delay-700" : "scale-0 opacity-0"} h-full border bg-zinc-300 rounded-2xl overflow-hidden`}>
   <Image 
-    src={currentDetails.image} 
+    src={currentDetails.profile || ""} 
     alt="profile" 
     className="w-full h-full object-cover"
     priority

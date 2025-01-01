@@ -38,11 +38,7 @@ export default function HeaderSection() {
             opacity:0,
             duration:0.4
         })
-        headTl.from(".mode",{
-            y:-50,
-            opacity:0,
-            duration:0.4
-        })
+       
     })
    
 
