@@ -58,9 +58,9 @@ export default function FooterSection(){
                     <div className=" w-auto mt-10">
                     <div className=" text-[1.4rem] font-[500] text-transparent bg-clip-text bg-gradient-to-r from-zinc-200 via-sky-700 to-zinc-600 flex items-center group hover:underline underline-offset-1 gap-1 "> <FaUsers className=" text-zinc-100 text-[1.6rem] mb-1"/><span className="  duration-300 cursor-pointer">Follow Us</span></div>
                     <div className=" pl-[13%] pt-4 text-zinc-300 flex items-center gap-6">
-                        <FaSquareInstagram className=" text-[1.8rem]"/>
-                        <FaFacebookSquare className=" text-[1.8rem]"/>
-                        <FaXTwitter className=" text-[1.8rem]"/>
+                        <FaSquareInstagram className=" text-[1.8rem]" onClick={()=>window.open("https://www.instagram.com/techtoniclab/profilecard/?igsh=MThueDJ5MGp2bGFwNg==","_blank")}/>
+                        <FaFacebookSquare className=" text-[1.8rem]" onClick={()=>window.open("https://www.facebook.com/profile.php?id=61570667766428","_blank")}/>
+                        {/* <FaXTwitter className=" text-[1.8rem]"/> */}
                     </div>
                     
                     </div>
