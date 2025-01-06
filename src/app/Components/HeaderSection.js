@@ -51,7 +51,7 @@ export default function HeaderSection() {
                 <div className="   shrink-0">
                     <Image src={logo1} alt="logo"  className=" w-[50px]  md:w-[60px] shrink-0" />
                 </div>
-               <h1 className=" text-[1.4rem] md:text-[1.8rem] font-[500]  text-zinc-100">Techtonic Labs</h1>
+               <h1 className=" text-[1.4rem] md:text-[1.8rem] font-[500]  text-zinc-100">Techtonic Lab</h1>
             </div>
             <div className=" hidden md:flex items-center pb-1 gap-7 cursor-pointer text-zinc-100">
             <Link href="/about" ><div className={`relative flex justify-center items-center group ${path==="/about"&&" text-teal-500"}`}>About Us <span className= {`absolute -bottom-1   border ${path==="/about"?"w-full text-teal-500":"w-3 group-hover:w-full"} border-teal-600 duration-500`}></span></div></Link>
