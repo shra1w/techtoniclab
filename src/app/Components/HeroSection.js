@@ -85,7 +85,7 @@ export default function HeroSection() {
     })
     
     return (
-        <div className="w-full min-h-[100vh]  bg-teal-700 bg-opacity-15">
+        <div id="topMain" className="w-full min-h-[100vh]  bg-teal-700 bg-opacity-15">
             <div className="relative  w-full h-full shrink-0 p-0 md:p-6 flex items-center  gap-5 max-w-screen mx-auto pt-[6%]  ">
                 <div className=" w-full md:w-[50%] shrink-0 h-[85vh]    md:relative flex justify-center items-center overflow-hidden">
                     <div className="circle1 w-[30rem] h-[30rem]  rounded-full bg-teal-600 bg-opacity-80 absolute -bottom-20"></div>

@@ -26,28 +26,13 @@ const outfit = Outfit({
 const ImageWrapper = ({ src, alt, className = '' }) => {
   const isSVG = src.src?.endsWith('.svg') || typeof src === 'string' && src.endsWith('.svg');
   
-  if (isSVG) {
-    return (
-      <div className={`relative h-12 md:h-16 ${className}`}>
-        <Image
-          src={src}
-          alt={alt}
-          fill
-          className="object-contain"
-          priority
-        />
-      </div>
-    );
-  }
-
   return (
-    <div className={`relative h-12 md:h-16 ${className}`}>
+    <div className={`relative w-48 h-24 flex items-center justify-center ${className}`}>
       <Image
         src={src}
         alt={alt}
-        width={160}
-        height={64}
-        className="w-auto h-full object-contain"
+        fill
+        className={`object-contain ${!isSVG ? 'w-auto h-full' : ''}`}
         priority
       />
     </div>
@@ -92,14 +77,17 @@ export default function PartnerSection() {
       >
         Our Trusted Partners
       </h1>
-      <div className='w-full overflow-hidden mt-10 mb-10'>
-        <div className="w-full">
-          <Marquee>
+      <div className="w-full overflow-hidden mt-10 mb-10">
+        <Marquee 
+          speed={40}
+          gradient={false}
+          className="flex items-center"
+        >
+          <div className="flex items-center">
             {partners.map((partner, index) => (
               <div 
                 key={index} 
-                className="mx-8 md:mx-12 flex items-center justify-center"
-                style={{ minWidth: '120px' }}
+                className= " mx-10 md:mx-20 flex items-center justify-center" // Increased margin here
               >
                 <ImageWrapper
                   src={partner.src}
@@ -108,8 +96,8 @@ export default function PartnerSection() {
                 />
               </div>
             ))}
-          </Marquee>
-        </div>
+          </div>
+        </Marquee>
       </div>
     </div>
   );

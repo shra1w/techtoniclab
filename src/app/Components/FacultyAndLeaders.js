@@ -149,14 +149,13 @@ export default function FacultyAndLEaders(){
                     {leaders.map((each,index)=>{
                         return(
                             <div  key={index} onClick={()=>{setCurrentDeatils(each);setCategory(1)}}>
-                        <LeadersCardDesign eachLeader={each} setShowDetails={setShowDetails} setCategory={setCategory}/>
-
+                                <LeadersCardDesign eachLeader={each} setShowDetails={setShowDetails} setCategory={setCategory}/>
                             </div>
                         )   
                     })}
                 
-                {category===1&&<div className={` ${showDetails?"scale-x-100 opacity-100":" scale-x-0 opacity-0"}  overflow-hidden origin-left duration-500 md:w-[70vw] w-[90vw] rounded-xl h-screen md:h-[70vh] absolute flex md:flex-row flex-col gap-3 bg-zinc-100 shadow-md shadow-zinc-800 p-5`}>
-                    <div className={`w-[40%] relative ${showDetails ? "scale-100 opacity-100 delay-700" : "scale-0 opacity-0"} h-full border bg-zinc-300 rounded-2xl overflow-hidden`}>
+                {category===1&&<div className={` z-50 ${showDetails?"scale-x-100 opacity-100":" scale-x-0 opacity-0"}  overflow-hidden origin-left duration-500 md:w-[70vw] w-[90vw] rounded-xl h-auto md:h-[70vh] absolute flex md:flex-row flex-col  gap-3 bg-zinc-100 shadow-md shadow-zinc-800 p-5`}>
+                    <div className={` w-[95%] md:w-[40%] relative ${showDetails ? "scale-100 opacity-100 delay-700" : "scale-0 opacity-0"} h-[25rem] md:h-full border bg-zinc-300 rounded-2xl overflow-hidden`}>
   <Image 
     src={currentDetails.profile || ""} 
     alt="profile" 
@@ -164,10 +163,10 @@ export default function FacultyAndLEaders(){
     priority
   />
 </div>
-                    <div className= {`w-[60%] ${showDetails?"scale-100 opacity-100 delay-1000":" scale-0 opacity-0"} h-full py-2 px-3 flex flex-col items-center`} >
+                    <div className= {` w-[100%] md:w-[60%] ${showDetails?"scale-100 opacity-100 delay-1000":" scale-0 opacity-0"} h-full py-2   md:px-3 flex flex-col items-center`} >
                         <h1 className=" text-zinc-950 font-semibold text-[2.6rem]">{currentDetails?.name}</h1>
                         <p className=" text-zinc-700 text-[1.2rem] text-center">{currentDetails?.tag}</p>
-                        <div className=" py-4 overflow-y-auto flex flex-col gap-2 pl-4">
+                        <div className="  py-4 overflow-y-auto flex flex-col gap-2 pl-4">
                             {currentDetails?.content.map((eachContent,index)=>{
                                 return(
                                 <div key={index} className=" flex gap-3">
@@ -197,9 +196,16 @@ export default function FacultyAndLEaders(){
                             
                         )
                     })}
-                    {category===2&&<div className={` ${showDetails?"scale-x-100 opacity-100":" scale-x-0 opacity-0"}  overflow-hidden origin-left duration-500 md:w-[70vw] w-[90vw] rounded-xl h-screen md:h-[70vh] absolute flex md:flex-row flex-col gap-3 bg-gradient-to-tr from-sky-300 via-orange-200 to-sky-300 shadow-md shadow-zinc-800 p-5`}>
-                    <div className={`w-[40%] ${showDetails?"scale-100 opacity-100 delay-700":" scale-0 opacity-0"} h-full border bg-zinc-300 rounded-2xl`}></div>
-                    <div className= {`w-[60%] ${showDetails?"scale-100 opacity-100 delay-1000":" scale-0 opacity-0"} h-full py-2 px-3 flex flex-col items-center`} >
+                    {category===2&&<div className={` z-50 ${showDetails?"scale-x-100 opacity-100":" scale-x-0 opacity-0"}  overflow-hidden origin-left duration-500 md:w-[70vw] w-[90vw] rounded-xl h-auto md:h-[70vh] absolute flex md:flex-row flex-col gap-3 bg-gradient-to-tr from-sky-300 via-orange-200 to-sky-300 shadow-md shadow-zinc-800 p-5`}>
+                    <div className={` w-full md:w-[40%] ${showDetails?"scale-100 opacity-100 delay-700":" scale-0 opacity-0"} h-[25rem] md:h-full border bg-zinc-300 rounded-2xl`}>
+                    <Image 
+    src={currentDetails.profile || ""} 
+    alt="profile" 
+    className="w-full h-full object-cover"
+    priority
+  />
+                    </div>
+                    <div className= {` w-full md:w-[60%] ${showDetails?"scale-100 opacity-100 delay-1000":" scale-0 opacity-0"} h-full py-2 md:px-3 flex flex-col items-center`} >
                         <h1 className=" text-zinc-950 font-semibold text-[2.6rem]">{currentDetails?.name}</h1>
                         <p className=" text-zinc-700 text-[1.2rem] text-center">{currentDetails?.tag}</p>
                         <div className=" py-4 overflow-y-auto flex flex-col gap-2 pl-4">
