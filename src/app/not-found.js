@@ -18,10 +18,10 @@ export default function NotFoundPage() {
                         Page Not Found
                     </h1>
                     <h2 className="text-xl md:text-2xl lg:text-[2rem] font-semibold leading-normal lg:leading-8 mt-2 lg:mt-4 px-4 lg:px-0">
-                        Oops! The page you're looking for doesn't seem to exist.
+                        Oops! The page you&apos;re looking for doesn&apos;t seem to exist.
                     </h2>
                     <h2 className="text-lg md:text-xl lg:text-[1.6rem] text-zinc-600 px-4 lg:px-0">
-                        Don't worry, though—let's get you back on track!
+                        Don&apos;t worry, though—let&apos;s get you back on track!
                     </h2>
                     <div className="w-full flex items-center justify-center lg:justify-start lg:pl-10 mt-6 lg:mt-4">
                         <Link href="/">
