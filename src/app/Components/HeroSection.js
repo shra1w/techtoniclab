@@ -15,6 +15,10 @@ import skill from "@/app/assets/Icons/skill.png"
 import { HiArrowDownOnSquareStack } from "react-icons/hi2";
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { GrRadialSelected } from "react-icons/gr";
+import { FaSquareInstagram } from "react-icons/fa6";
+import { FaFacebookSquare } from "react-icons/fa";
+import { IoShareSocialSharp } from "react-icons/io5";
+import toast from "react-hot-toast";
 
 const kanit = Kanit({
   weight: ['400','500','600','700'],
@@ -88,22 +92,22 @@ export default function HeroSection() {
         <div id="topMain" className="w-full min-h-[100vh]  bg-teal-700 bg-opacity-15">
             <div className="relative  w-full h-full shrink-0 p-0 md:p-6 flex items-center  gap-5 max-w-screen mx-auto pt-[6%]  ">
                 <div className=" w-full md:w-[50%] shrink-0 h-[85vh]    md:relative flex justify-center items-center overflow-hidden">
-                    <div className="circle1 w-[30rem] h-[30rem]  rounded-full bg-teal-600 bg-opacity-80 absolute -bottom-20"></div>
+                    <div className="circle1 w-[30rem] h-[30rem] md:block hidden  rounded-full bg-teal-600 bg-opacity-80 absolute -bottom-20"></div>
 
-                    <div className=" circle2 w-[24rem] h-[24rem] flex justify-center items-center rounded-full bg-teal-600 bg-opacity-30 absolute right-24">
-                    <div className="  w-[20rem] h-[20rem] rounded-full bg-teal-600 bg-opacity-80 backdrop-blur-[1px] absolute right-10"></div>
+                    <div className=" circle2 w-[24rem] h-[24rem]  flex justify-center items-center rounded-full bg-zinc-100 md:bg-teal-600 bg-opacity-30 absolute right-24">
+                    <div className="  w-[20rem] h-[20rem] md:block hidden rounded-full bg-teal-600 bg-opacity-80 backdrop-blur-[1px] absolute right-10"></div>
 
                     </div>
-                    <Image src={hero1} alt="hero" className=" hero absolute origin-bottom bottom-0 w-[36rem]"/>
+                    <Image src={hero1} alt="hero" className=" md:block hidden hero absolute origin-bottom bottom-0 w-[36rem]"/>
 
                 </div>
-                <div className=" w-full border  md:w-[50%]  h-[90vh] md:h-[75vh]  absolute md:backdrop-blur-none backdrop-blur-md  md:relative flex justify-center flex-col items-center overflow-hidden">
+                <div className=" w-[90%] md:ml-0 mx-[10%] border  md:w-[50%]  h-[90vh] md:h-[75vh]  absolute md:backdrop-blur-none backdrop-blur-md  md:relative flex justify-center flex-col items-center overflow-hidden">
 
                    <div className=" relative flex flex-col pl-[5%]  md:pl-[13%] text-[3.7rem] leading-[3.4rem] tracking-tight font-semibold text-zinc-100 md:text-zinc-950">
-                        <h1 className=" text-[1.4rem] md:text-[1.6rem]  w-auto flex flex-wrap leading-4 gap-2 uppercase text-teal-600 font-semibold  text-start herotext mb-5"><span>Accelerate</span> <span>Your</span> <span>Career</span> <span>Growth</span></h1>
-                    <h1 className="text-transparent bg-clip-text  bg-gradient-to-r md:from-teal-700 from-zinc-100 via-zinc-900 to-sky-500 md:text-zinc-900 herotext">Empowering</h1>
-                    <h1 className="text-transparent bg-clip-text  bg-gradient-to-r md:from-teal-700 from-zinc-100 via-zinc-900 to-sky-500 md:text-zinc-900 herotext">Future IT Professionals</h1>
-                    <p className=" text-[1.3rem]  text-zinc-200  md:text-zinc-500 tracking-wide  leading-6 mt-4  w-[90%] md:w-[70%] text-wrap herotext">Unlock your potential with expert guidance tailored to help you land your dream job.
+                        <h1 className=" text-[1.4rem] md:text-[1.6rem]  w-auto flex flex-wrap leading-5 gap-2 uppercase text-teal-600 font-semibold  text-start herotext mb-5"><span>Accelerate</span> <span>Your</span> <span>Career</span> <span>Growth</span></h1>
+                    <h1 className="text-transparent bg-clip-text  bg-gradient-to-r md:from-teal-700 from-zinc-800 via-zinc-900 to-sky-500 md:text-zinc-900 herotext">Empowering</h1>
+                    <h1 className="text-transparent bg-clip-text  bg-gradient-to-r md:from-teal-700 from-zinc-800 via-zinc-900 to-sky-500 md:text-zinc-900 herotext">Future IT Professionals</h1>
+                    <p className=" text-[1.3rem]  text-zinc-600  md:text-zinc-500 tracking-wide  leading-6 mt-4  w-[90%] md:w-[70%] text-wrap herotext">Unlock your potential with expert guidance tailored to help you land your dream job.
                     Start your journey toward a brighter future today</p>
                     <Link href="#contact" className="herotext"><div className="w-56 mt-5  group  h-10 rounded-full bg-zinc-200 md:bg-teal-600 hover:bg-zinc-900 hover:bg-opacity-100 duration-300  md:bg-opacity-35 text-[1.1rem] flex items-center px-1 ">
                                 <div className="w-8 h-8 rounded-full group-hover:bg-zinc-100 bg-zinc-950 grid duration-300 place-items-center text-base group-hover:text-zinc-900 text-zinc-100 ">
@@ -115,8 +119,18 @@ export default function HeroSection() {
 
                 </div>
 
-               
+               <div className=" absolute left-0 w-20  h-[100%] flex flex-col items-center justify-end gap-6 pb-[14%] md:pb-[7%]">
+
+                    {/* <div className=" w-10 h-10 rounded-xl bg-zinc-100"></div> */}
+                    
+                    <div className=" w-10 h-10 rounded-md group bg-zinc-100 grid place-items-center relative hover:bg-zinc-900 duration-300 cursor-pointer text-emerald-800 hover:text-emerald-400" onClick={async()=> {await navigator.clipboard.writeText("https://www.techtoniccorporate.com/");toast.success("Link Copied to clipboard")}}><IoShareSocialSharp className="  text-[1.6rem]"/><span className=" absolute left-[105%] px-2 py-1 rounded-md bg-zinc-800 text-emerald-500 duration-300 group-hover:scale-100 scale-0 origin-left">Share</span></div>
+
+                    <Link href="https://www.facebook.com/profile.php?id=61570667766428"><div className=" w-10 h-10 rounded-md group bg-zinc-100 grid place-items-center relative hover:bg-zinc-900 duration-300 cursor-pointer text-emerald-800 hover:text-emerald-400"><FaFacebookSquare className="  text-[1.6rem]"/><span className=" absolute left-[105%] px-2 py-1 rounded-md bg-zinc-800 text-emerald-500 duration-300 group-hover:scale-100 scale-0 origin-left">Facebook</span></div></Link>
+                    <Link href="https://www.instagram.com/techtoniclab/profilecard/?igsh=MThueDJ5MGp2bGFwNg=="><div className=" w-10 h-10 rounded-md group bg-zinc-100 grid place-items-center relative hover:bg-zinc-900 duration-300 cursor-pointer text-emerald-800 hover:text-emerald-400"><FaSquareInstagram className=" text-[1.6rem]"/><span className=" absolute left-[105%] px-2 py-1 rounded-md bg-zinc-800 text-emerald-500 duration-300 group-hover:scale-100 scale-0 origin-left">Instagram</span></div></Link>
+
+               </div>
             </div>
+            
             <div className=" w-[full md:h-[90vh] h-[100vh]  relative flex justify-center items-center">
                 <div className=" w-[150%] h-full absolute rotate-[5deg] bg-zinc-100 px-4 flex md:flex-row flex-col-reverse items-center  ">
                     <div className="  w-[100%] md:w-[55%]   md:border-none border-t border-zinc-900 h-full  flex justify-between items-start relative ">

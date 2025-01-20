@@ -79,11 +79,11 @@ export default function AboutSection() {
                                     {/* Icon circle */}
                                     <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 
                                                   w-20 h-20 rounded-full bg-zinc-800 flex items-center justify-center">
-                                        <Image 
+                                        {card.icon&&<Image 
                                             src={card.icon} 
                                             alt={card.cardName} 
                                             className="w-12 h-12 object-contain"
-                                        />
+                                        />}
                                     </div>
 
                                     <h3 className="text-xl font-semibold mb-3 text-center">

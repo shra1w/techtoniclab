@@ -5,7 +5,7 @@ import PersonImage from "@/app/assets/person.png"
 export default function LeadersCardDesign({eachLeader,setShowDetails}){
     return(
         <div className=" w-[18rem] h-[24rem] group shrink-0 hover:rounded-r-none overflow-hidden  rounded-2xl border border-zinc-700 relative flex justify-center items-center">
-            <Image src={eachLeader.profile} alt="image" className=" object-cover h-full   "/>
+            {eachLeader.profile&&<Image src={eachLeader.profile} alt="image" className=" object-cover h-full   "/>}
              <div className=" absolute bottom-0 h-[47%]  w-full rounded-xl overflow-hidden group-hover:rounded-r-none  ">
                  <div className=" w-[27rem] h-[9rem] absolute group-hover:bg-sky-700 duration-300 -left-5 top-6 bg-zinc-700  backdrop-blur-md bg-opacity-35 -rotate-[12deg]"></div>
                  <div className=" w-[25rem] h-[8rem] absolute -left-3 top-[2.13rem] bg-zinc-700  backdrop-blur-md bg-opacity-60 group-hover:bg-opacity-90 -rotate-[12deg]">

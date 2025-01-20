@@ -89,11 +89,11 @@ export default function PartnerSection() {
                 key={index} 
                 className= " mx-10 md:mx-20 flex items-center justify-center" // Increased margin here
               >
-                <ImageWrapper
+                {partner.src&&<ImageWrapper
                   src={partner.src}
                   alt={partner.alt}
                   className={partner.className}
-                />
+                />}
               </div>
             ))}
           </div>
