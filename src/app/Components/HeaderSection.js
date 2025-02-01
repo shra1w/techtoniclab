@@ -44,7 +44,7 @@ export default function HeaderSection({miniNav, setMiniNav}) {
     return (
         <header className="w-screen h-auto py-3 px-3 md:px-8 z-40 fixed top-0 left-0  pt-4  flex justify-center  ">
             <div className=" relative headblackbg  origin-left flex justify-between items-center bg-zinc-900 py-2 rounded-md w-[90%] px-5">
-            <Link href="#topMain"><div 
+            <Link href={path==="/carrers"?"/":"#topMain"}><div 
                 className="flex items-center gap-1 md:gap-1 logo "
             >
                 <div className="   shrink-0">

@@ -26,18 +26,18 @@ export default function FacultyAndLEaders(){
         ]
     })
     const leaders=[
-        {
-            name:"Rupali Wankhede",
-            tag:"13+ Years of ERP Expertise",
-            content:[
-                "A highly experienced professional with over 13 years of expertise in the ERP domain and a robust technical background in computer science, offering a proven track record in delivering complex IT solutions and innovations. With 8+ years as a Senior Faculty, I bring a deep understanding of education, training, and IT consulting, empowering the next generation of professionals with the knowledge and skills needed to excel in today’s fast-evolving tech landscape.",
- "Passionate about bridging the gap between academia and industry, I have consistently fostered growth in both technical expertise and leadership, ensuring that students and clients alike receive high-quality, impactful guidance.",
-"Whether delivering cutting-edge ERP solutions, developing academic curricula, or providing expert IT consulting, I am committed to driving transformation and helping organizations and individuals thrive in the digital era."
+//         {
+//             name:"Rupali Wankhede",
+//             tag:"13+ Years of ERP Expertise",
+//             content:[
+//                 "A highly experienced professional with over 13 years of expertise in the ERP domain and a robust technical background in computer science, offering a proven track record in delivering complex IT solutions and innovations. With 8+ years as a Senior Faculty, I bring a deep understanding of education, training, and IT consulting, empowering the next generation of professionals with the knowledge and skills needed to excel in today’s fast-evolving tech landscape.",
+//  "Passionate about bridging the gap between academia and industry, I have consistently fostered growth in both technical expertise and leadership, ensuring that students and clients alike receive high-quality, impactful guidance.",
+// "Whether delivering cutting-edge ERP solutions, developing academic curricula, or providing expert IT consulting, I am committed to driving transformation and helping organizations and individuals thrive in the digital era."
 
-            ],
-            profile:Rupali
+//             ],
+//             profile:Rupali
 
-        },
+//         },
         {
             name:"Dnyaneshwari Talekar",
             tag:"10+ years in HR, recruitment, training, and development",
@@ -51,17 +51,17 @@ export default function FacultyAndLEaders(){
             ] ,
             profile:Dnyaneshwari
         },
-        {
-            name:"Sneha Khubalkar",
-            tag:"8+ years in teaching, ERP, and design engineering.",
-            content:[
-                "An accomplished professional with a robust academic foundation and versatile work experience, I hold an M.Tech in Power Electronics & Power Systems. My career spans over eight years across diverse domains, reflecting my adaptability, expertise, and commitment to excellence.",
-                "I began my journey with two years of teaching experience in the IT field, where I honed my communication, mentoring, and technical skills. Subsequently, I gained two years of industrial experience in ERP, acquiring in-depth knowledge of enterprise processes and operational efficiency.",
-                "For the past four years, I have been thriving as a Designer Engineer, leveraging my technical acumen and problem-solving abilities to design innovative solutions that meet industry standards. My diverse expertise equips me with a unique perspective to deliver optimal outcomes in complex, multidisciplinary environments.",
-                "Driven by a passion for continuous learning and professional growth, I excel in blending my academic knowledge and practical experience to contribute effectively to organizational success."
-              ],
-              profile:Sneha_Khubalkar
-        }
+        // {
+        //     name:"Sneha Khubalkar",
+        //     tag:"8+ years in teaching, ERP, and design engineering.",
+        //     content:[
+        //         "An accomplished professional with a robust academic foundation and versatile work experience, I hold an M.Tech in Power Electronics & Power Systems. My career spans over eight years across diverse domains, reflecting my adaptability, expertise, and commitment to excellence.",
+        //         "I began my journey with two years of teaching experience in the IT field, where I honed my communication, mentoring, and technical skills. Subsequently, I gained two years of industrial experience in ERP, acquiring in-depth knowledge of enterprise processes and operational efficiency.",
+        //         "For the past four years, I have been thriving as a Designer Engineer, leveraging my technical acumen and problem-solving abilities to design innovative solutions that meet industry standards. My diverse expertise equips me with a unique perspective to deliver optimal outcomes in complex, multidisciplinary environments.",
+        //         "Driven by a passion for continuous learning and professional growth, I excel in blending my academic knowledge and practical experience to contribute effectively to organizational success."
+        //       ],
+        //       profile:Sneha_Khubalkar
+        // }
 
     ]
 
@@ -117,7 +117,7 @@ export default function FacultyAndLEaders(){
                 "Educational Background in Engineering: Holds a B.E. in Mechanical Engineering from Nagpur University, blending technical knowledge with strategic insight to solve complex business challenges.",
                 "Innovative Problem Solver: Passionate about leveraging technology and strategic planning to deliver robust solutions that drive growth, streamline processes, and meet business objectives."
               ],
-              profile:Harshal_Sir
+            //   profile:Harshal_Sir
         },
         {
             name:"Vivek Sir",
