@@ -19,19 +19,6 @@ export default function CareersPage() {
   // Urgent hiring jobs
   const urgentHiringJobs = [
     {
-      "position": "Sales Managers & Executives",
-      "location": "Nagpur",
-      "type": "URGENT HIRING",
-      "workMode": "Work From Office",
-      "skills": [
-        "Any Graduate, marketing will be preferred",
-        "1+ year Educational/training programs sales experience",
-        "Excellent communication skills, fluency in English, Hindi and Marathi",
-        "Target-driven and energetic"
-      ],
-      "isUrgent": true
-    },
-    {
       "position": "Sales Executive",
       "location": "WFO Manish Nagar, Nagpur, Maharashtra",
       "type": "URGENT HIRING",
