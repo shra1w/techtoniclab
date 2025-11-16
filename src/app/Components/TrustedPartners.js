@@ -39,7 +39,7 @@ const LogoCarousel = ({ logos, direction, speed }) => {
   return (
     <div className="relative w-full overflow-hidden" ref={containerRef}>
       {/* Left fade mask */}
-      <div className={`absolute top-0 left-0 h-full z-10 md:bg-gradient-to-r from-white to-transparent ${direction === "left" ? "w-[20vw]" : "w-[10vw]"}`}></div>
+      <div className={`absolute top-0 left-0 h-full z-10 md:bg-gradient-to-r from-zinc-100 to-transparent ${direction === "left" ? "w-[20vw]" : "w-[10vw]"}`}></div>
       
       <motion.div 
         className="flex items-center"
@@ -66,7 +66,7 @@ const LogoCarousel = ({ logos, direction, speed }) => {
       </motion.div>
       
       {/* Right fade mask */}
-      <div className={`absolute top-0 right-0 h-full z-10 md:bg-gradient-to-l from-white to-transparent ${direction === "left" ? "w-[20vw]" : "w-[10vw]"}`}></div>
+      <div className={`absolute top-0 right-0 h-full z-10 md:bg-gradient-to-l from-zinc-100 to-transparent ${direction === "left" ? "w-[20vw]" : "w-[10vw]"}`}></div>
     </div>
   );
 };
@@ -109,7 +109,6 @@ const TrustedPartners = () => {
 
   return (
     <div className="w-full py-16 bg-zinc-100">
-      {/* <Image src={bankOfAmerica} className='w-32 ' alt="dsasd" /> */}
       <div className="container mx-auto px-4">
         {/* Heading Section */}
         <div className="text-center mb-16">

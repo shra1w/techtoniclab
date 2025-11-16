@@ -11,7 +11,7 @@ export default function HeroSectionContent({
     const textColor = useMotionTemplate`${currentColor}`
 
     return(
-        <div className="absolute left-0 top-0 z-10 w-full h-full flex flex-col items-center justify-center gap-4 md:gap-5 lg:gap-6">
+        <div className="absolute left-0 top-0 z-10 w-full h-full flex flex-col items-center pt-[25%] md:pt-[10%] gap-4 md:gap-5 lg:gap-6">
             {/* Desktop/Tablet version - Optimized text sizes */}
             <div className="text-[1.6rem] sm:text-[2.2rem] md:text-[3rem] lg:text-[3.5rem] xl:text-[4.2rem] w-[90%] font-semibold leading-[2rem] sm:leading-[2.5rem] md:leading-[3.2rem] lg:leading-[4rem] xl:leading-[4.5rem] text-center text-zinc-100 hidden sm:flex flex-col gap-1">
                 <div className="overflow-hidden">

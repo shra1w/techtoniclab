@@ -23,12 +23,12 @@ export default function RadialGradientSection(){
      },[])
   
     return(
-        <div className=" w-full h-full relative ">
+        <div className=" w-full h-[140vh] md:h-screen relative ">
          <motion.section
         style={{
             backgroundImage:backgrounRadial
         }}
-         className=" w-full h-full py-20  ">
+         className=" w-full h-screen  py-20  ">
 
 <HeroSectionContent currentColor={currentColor}/>
 

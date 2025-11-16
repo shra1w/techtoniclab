@@ -1,3 +1,4 @@
+import ContactUsSection from "./Components/ContactUsSection";
 import CoursesSection from "./Components/CoursesOffered";
 import FooterSection from "./Components/FooterSection";
 import HeaderSection from "./Components/HeaderSection";
@@ -18,13 +19,13 @@ export default function Home() {
     <main className=" w-full min-h-screen bg-zinc-950 ">
 
       <HeaderSection/>
-      <div className=" relative w-full h-[100vh]">
+      <div className=" relative w-full min-h-[100vh]">
         <RadialGradientSection/>
       </div>
 
-      <div className=" w-full h-[65vh]   sm:h-[60vh]   "></div>
-      <div className=" w-full min-h-[50vh] pt-[10vh]  ">
-        <div className="  w-full h-auto">
+      <div className=" w-full h-[65vh] sm:h-[60vh]   "></div>
+      <div className=" w-full min-h-[50vh] pt-[10vh]   ">
+        <div className="   w-full h-auto">
           <TrustedPartners />
         </div>
       </div>
@@ -38,6 +39,7 @@ export default function Home() {
         <TestimonialCarousel/>
       </div>
       <FacultyAndLEaders/>
+      <ContactUsSection/>
       <FooterSection/>
     </main>
     </SmoothScroll>
