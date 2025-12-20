@@ -23,6 +23,7 @@ const JobApplicationForm = () => {
   const [focused, setFocused] = useState('');
 
   const positions = [
+    "Sales Executive",
     "Admin & Receptionist",
     "Full-stack developer",
     "SAP FICO Trainer",

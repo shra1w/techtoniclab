@@ -64,7 +64,7 @@ const TopCompaniesSection = () => {
   return (
     <div 
       ref={sectionRef} 
-      className="w-full bg-white py-20 px-4 sm:px-6 lg:px-8 overflow-hidden"
+      className="w-full bg-zinc-50 py-20 px-4 sm:px-6 lg:px-8 overflow-hidden"
     >
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
@@ -95,7 +95,7 @@ const TopCompaniesSection = () => {
               custom={index}
               variants={logoVariants}
             >
-              <div className="p-6 rounded-lg bg-white  text-zinc-900 transition-shadow duration-300 w-full flex items-center justify-center h-32">
+              <div className="p-6 rounded-lg bg-zinc-50  text-zinc-900 transition-shadow duration-300 w-full flex items-center justify-center h-32">
                 
                   {company.logo&&<Image 
                     src={company.logo} 

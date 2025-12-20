@@ -1,13 +1,18 @@
+import ContactUsSection from "./Components/ContactUsSection";
 import CoursesSection from "./Components/CoursesOffered";
+import FAQSection from "./Components/FaQSection";
 import FooterSection from "./Components/FooterSection";
 import HeaderSection from "./Components/HeaderSection";
 import RadialGradientSection from "./Components/HeroSectionBg";
+import HistorySection from "./Components/HistorySection";
+import IndustryTrainingSection from "./Components/IndustryTrainingSetion";
 import FacultyAndLEaders from "./Components/LeadersandFaculty";
 import SmoothScroll from "./Components/SmoothScroll";
 import TopCompaniesSection from "./Components/SuccefullyPlaced";
 import TestimonialCarousel from "./Components/TestimonialSection";
 import ThreeStepSection from "./Components/ThreeStepsSection";
 import TrustedPartners from "./Components/TrustedPartners";
+import WhyNagpurSection from "./Components/WhyNagpurSection";
 
 export default function Home() {
   
@@ -18,26 +23,33 @@ export default function Home() {
     <main className=" w-full min-h-screen bg-zinc-950 ">
 
       <HeaderSection/>
-      <div className=" relative w-full h-[100vh]">
+      <div className=" relative w-full min-h-[180vh] ">
         <RadialGradientSection/>
       </div>
 
-      <div className=" w-full h-[65vh]   sm:h-[60vh]   "></div>
-      <div className=" w-full min-h-[50vh] pt-[10vh]  ">
-        <div className="  w-full h-auto">
+      {/* <div className=" w-full h-[65vh] sm:h-[60vh]   "></div> */}
+      <div className=" w-full min-h-[50vh] pt-[10vh]   ">
+        <div className="   w-full h-auto">
           <TrustedPartners />
         </div>
       </div>
-      <div id="courses" className="  w-full h-auto pt-[10vh] bg-zinc-100">
+
+      <HistorySection/>
+
+      <div id="courses" className="  w-full h-auto pt-[5vh] bg-zinc-50">
           <CoursesSection/>
         </div>
-      <div className=" py-[8vh] bg-zinc-100 ">
+      <WhyNagpurSection/>
+      <div className=" py-[5vh] bg-zinc-50 ">
         <TopCompaniesSection/>
       </div>
       <div className=" w-full min-h-[100vh]">
         <TestimonialCarousel/>
       </div>
       <FacultyAndLEaders/>
+      <FAQSection/>
+      <ContactUsSection/>
+      <IndustryTrainingSection/>
       <FooterSection/>
     </main>
     </SmoothScroll>

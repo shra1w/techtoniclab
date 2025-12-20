@@ -3,6 +3,7 @@ import { animate, useMotionTemplate, useMotionValue,motion } from "motion/react"
 import { useEffect, useState } from "react"
 import HeroSectionContent from "./HeroSectionContent"
 import ThreeStepSection from "./ThreeStepsSection"
+import AboutTextSection from "./ThreeStepsSection"
 
 const colors=[
     'rgba(172, 19, 59, 0.52)',
@@ -23,18 +24,18 @@ export default function RadialGradientSection(){
      },[])
   
     return(
-        <div className=" w-full h-full relative ">
+        <div className=" w-full min-h-[140vh]  md:h-screen relative ">
          <motion.section
         style={{
             backgroundImage:backgrounRadial
         }}
-         className=" w-full h-full py-20  ">
+         className=" w-full h-screen  py-20  ">
 
 <HeroSectionContent currentColor={currentColor}/>
 
         </motion.section>
-        <ThreeStepSection/>
-
+        <AboutTextSection/>
+{/*  */}
         </div>
        
     )
