@@ -12,7 +12,11 @@ import ContactForm from "../connect-with-us/ContactForm";
 
 export default function ContactUsSection() {
   return (
+<<<<<<< HEAD
     <main className="min-h-screen bg-zinc-50 pt-[5rem]">
+=======
+    <main className="min-h-screen bg-zinc-100 pt-[5rem]">
+>>>>>>> ca50671d0c1cc4c262d83d1a15f70452810fcb1e
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="space-y-12">
           <div className="text-center w-full">
