@@ -24,7 +24,7 @@ export default function RadialGradientSection(){
      },[])
   
     return(
-        <div className=" w-full min-h-[140vh]  md:h-screen relative ">
+        <div className=" w-full min-h-[140vh]  md:min-h-screen relative ">
          <motion.section
         style={{
             backgroundImage:backgrounRadial

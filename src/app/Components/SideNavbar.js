@@ -9,6 +9,7 @@ const SideNavBar = ({isOpen, setIsOpen}) => {
 
 
   useEffect(() => {
+    // Set window width on component mount and handle resize
     setWindowWidth(window.innerWidth);
     const handleResize = () => setWindowWidth(window.innerWidth);
     window.addEventListener('resize', handleResize);

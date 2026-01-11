@@ -39,6 +39,24 @@ const testimonials = [
     company: "GIF Technologies",
     package: "",
     image: "/api/placeholder/40/40"
+  },
+  {
+    id: 5,
+    content: "A B.Com graduate, Aman transitioned from an SAP End User to an SAP Consultant and secured placement at TCS, Nagpur by clearing just two interview rounds, supported by our industry-focused Corporate Grooming sessions. Aman secured his placement at TCS, Nagpur by clearing just two interview rounds, made possible through our effective Corporate Grooming sessions that focused on industry readiness, confidence, and practical skills.",
+    rating: 5,
+    name: "Aman Pathan",
+    company: "TCS Nagpur",
+    package: "",
+    image: "/api/placeholder/40/40"
+  },
+  {
+    id: 6,
+    content: "I am happy to share that I have been placed at Lighthouse as a Functional Consultant. This opportunity marks an important milestone in my professional journey, and I’m grateful for the guidance, learning, and support that helped me achieve this.",
+    rating: 5,
+    name: "Sneha Ashokrao Khubalkar",
+    company: "Lighthouse",
+    package: "",
+    image: "/api/placeholder/40/40"
   }
 ];
 
@@ -117,7 +135,7 @@ const TestimonialCarousel = () => {
                 </h1>
                 
                 {/* Testimonial Content - Responsive text */}
-                <p className="text-white text-sm sm:text-base md:text-lg leading-relaxed mb-3 sm:mb-4 px-2">
+                <p className="text-white text-xs sm:text-sm md:text-md leading-relaxed mb-3 sm:mb-4 px-2">
                   &quot;{currentTestimonial.content}&quot;
                 </p>
                 

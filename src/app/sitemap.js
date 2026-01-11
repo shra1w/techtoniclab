@@ -37,6 +37,12 @@ export default function sitemap() {
         changeFrequency: 'yearly',
         priority: 0.8,
       },
+       {
+        url: `${NEXT_PUBLIC_REDIRECT_URL}/data_science_course`,
+        lastModified: new Date(),
+        changeFrequency: 'yearly',
+        priority: 0.8,
+      },
       {
         url: `${NEXT_PUBLIC_REDIRECT_URL}/data_analytics_course`,
         lastModified: new Date(),

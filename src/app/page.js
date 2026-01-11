@@ -27,12 +27,7 @@ export default function Home() {
         <RadialGradientSection/>
       </div>
 
-      {/* <div className=" w-full h-[65vh] sm:h-[60vh]   "></div> */}
-      <div className=" w-full min-h-[50vh] pt-[10vh]   ">
-        <div className="   w-full h-auto">
           <TrustedPartners />
-        </div>
-      </div>
 
       <HistorySection/>
 

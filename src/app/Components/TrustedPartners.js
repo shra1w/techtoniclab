@@ -109,15 +109,15 @@ const TrustedPartners = () => {
 
   return (
     <div className="w-full py-16 bg-zinc-100">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 flex flex-col ">
         {/* Heading Section */}
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-emerald-600 mb-3">Trusted Partners</h2>
+        <div className="text-center ">
+          <h2 className="text-4xl font-bold text-zinc-900 mb-3">Trusted Partners</h2>
           <p className="text-zinc-700 text-lg">We have 100+ trusted partners for student placement</p>
         </div>
 
         {/* Carousel Rows */}
-        <div className="space-y-[10vh] mt-[13vh]">
+        <div className="space-y-[10vh] mt-[6vh]">
           <LogoCarousel logos={row1Logos} direction="right" speed={2} /> {/* First row moving right */}
           <LogoCarousel logos={row2Logos} direction="left" speed={3} /> {/* Second row (shuffled) moving left with different speed */}
           {/* <LogoCarousel logos={row3Logos} direction="right" speed={6} />  */}
