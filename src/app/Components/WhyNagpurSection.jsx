@@ -22,7 +22,7 @@ export default function WhyNagpurSection() {
           viewport={{ once: true }}
           className="text-center mb-16 max-w-3xl mx-auto"
         >
-          <h2 className="text-3xl md:text-5xl font-bold leading-tight">
+          <h2 className="text-3xl md:text-5xl text-white font-bold leading-tight">
             Why Choose <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-500">IT Courses in Nagpur</span> for Your Career?
           </h2>
         </motion.div>

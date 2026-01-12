@@ -257,11 +257,11 @@ export default function FacultyAndLeaders(){
                                     <h1 className="text-emerald-700 font-semibold text-2xl sm:text-3xl md:text-[2.6rem]">
                                         {currentDetails?.name}
                                     </h1>
-                                    <p className="text-zinc-400 text-lg md:text-[1.2rem] mt-4 text-center">
+                                    <p className="text-zinc-400  text-lg md:text-[1.2rem] mt-4 text-center">
                                         {currentDetails?.tag}
                                     </p>
                                     
-                                    <div className="py-4 overflow-y-auto flex flex-col gap-2 pl-4 w-full">
+                                    <div className="py-4 overflow-y-auto text-zinc-100 flex flex-col gap-2 pl-4 w-full">
                                         {currentDetails?.content.map((eachContent, index) => (
                                             <motion.div 
                                                 key={index} 

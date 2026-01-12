@@ -11,7 +11,7 @@ export default function LeadersCardDesign({ eachLeader, setShowDetails, setCateg
 
     return (
         <motion.div 
-            className="w-[16rem] sm:w-[18rem] h-[24rem] group shrink-0 hover:rounded-r-none overflow-hidden rounded-2xl shadow-xl shadow-zinc-800/40 hover:shadow-emerald-800/40 duration-300 cursor-pointer relative flex justify-center items-center"
+            className="w-[16rem] sm:w-[18rem] h-[24rem] group shrink-0  overflow-hidden rounded-2xl shadow-xl shadow-zinc-800/40 hover:shadow-emerald-800/40 duration-300 cursor-pointer relative flex justify-center items-center"
             whileHover={{ y: -16 }}
             transition={{ type: "spring", stiffness: 300, damping: 15 }}
         >
@@ -39,7 +39,7 @@ export default function LeadersCardDesign({ eachLeader, setShowDetails, setCateg
                     <h1 className="text-xl sm:text-[1.4rem] font-[500] text-transparent bg-clip-text bg-gradient-to-r from-sky-300 via-orange-200 to-sky-300 text-center px-1">
                         {eachLeader?.name || "Name"}
                     </h1>
-                    <p className="text-sm sm:text-base text-zinc-400 leading-5 text-center w-full pt-1 px-2">
+                    <p className="text-sm sm:text-base  text-zinc-400 leading-5 text-center w-full pt-1 px-2">
                         {eachLeader?.tag}
                     </p>
                     
@@ -52,7 +52,7 @@ export default function LeadersCardDesign({ eachLeader, setShowDetails, setCateg
                         <motion.div
                             animate={{ rotate: [90, 270] }}
                             transition={{ duration: 0.3, ease: "easeInOut" }}
-                            className="group-hover:rotate-[270deg]"
+                            className="group-hover:-rotate-[90deg] duration-500"
                         >
                             <LuCircleFadingArrowUp />
                         </motion.div>
