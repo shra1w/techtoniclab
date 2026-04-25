@@ -156,9 +156,9 @@ export default function CareersPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800">
               Apply for: {selectedJob?.position || "Position"}
-            </h1>
+            </h2>
             <p className="text-lg md:text-xl text-gray-600 mt-4">
               Submit your details and upload your resume to explore this exciting career opportunity. Let&apos;s grow together!
             </p>
@@ -170,9 +170,9 @@ export default function CareersPage() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800">
               Build Your Career With Us
-            </h1>
+            </h2>
             <p className="text-lg md:text-xl text-gray-600 mt-4">
               Join a team passionate about empowering others to achieve their career goals and grow alongside us.
             </p>

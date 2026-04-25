@@ -52,7 +52,7 @@ export default function HeaderSection(){
                     transition={{duration:0.5}}
                 >
                     <Image src={logo} alt="techtomic lab" className="w-[2.5rem] md:w-[2.8rem]"/>
-                    <h1 className="text-[1.3rem] md:text-[1.8rem] font-semibold tracking-tight text-zinc-100">Techtonic Lab</h1>
+                    <div className="text-[1.3rem] md:text-[1.8rem] font-semibold tracking-tight text-zinc-100">Techtonic Lab</div>
                 </motion.div>
             </div></Link>
             

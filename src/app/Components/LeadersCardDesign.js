@@ -36,9 +36,9 @@ export default function LeadersCardDesign({ eachLeader, setShowDetails, setCateg
                 />
                 
                 <div className="w-full h-[7rem] border-zinc-100 absolute bottom-0 left-0 flex flex-col items-center">
-                    <h1 className="text-xl sm:text-[1.4rem] font-[500] text-transparent bg-clip-text bg-gradient-to-r from-sky-300 via-orange-200 to-sky-300 text-center px-1">
+                    <h3 className="text-xl sm:text-[1.4rem] font-[500] text-transparent bg-clip-text bg-gradient-to-r from-sky-300 via-orange-200 to-sky-300 text-center px-1">
                         {eachLeader?.name || "Name"}
-                    </h1>
+                    </h3>
                     <p className="text-sm sm:text-base  text-zinc-400 leading-5 text-center w-full pt-1 px-2">
                         {eachLeader?.tag}
                     </p>

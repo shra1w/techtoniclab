@@ -17,8 +17,8 @@ export default function ContactPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 mt-[8vh] pt-[10vh]">
         <div className="space-y-12">
           <div className="text-center w-full">
-            <h1 className="text-[2rem] font-semibold text-gray-900 sm:text-[5rem] sm:leading-[5.5rem] text-start">Looking for growth, opportunity
-               and the right guidance? Let’s connect and shape your journey together.</h1>
+            <h2 className="text-[2rem] font-semibold text-gray-900 sm:text-[5rem] sm:leading-[5.5rem] text-start">Looking for growth, opportunity
+               and the right guidance? Let’s connect and shape your journey together.</h2>
            
           </div>
           

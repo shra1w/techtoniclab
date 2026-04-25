@@ -73,8 +73,8 @@ const CorporateGroomingAccordion = () => {
       <HeaderSection/>
       <div className="w-full py-20 md:py-[10rem] px-4">
         <div className="max-w-5xl mx-auto">
-          <h1 className="text-5xl md:text-7xl font-bold text-white mb-4">Transform.</h1>
-          <h2 className="text-3xl md:text-5xl font-bold text-zinc-500">From Potential to Professional.</h2>
+          <div className="text-5xl md:text-7xl font-bold text-white mb-4">Transform.</div>
+          <div className="text-3xl md:text-5xl font-bold text-zinc-500">From Potential to Professional.</div>
         </div>
       </div>
 

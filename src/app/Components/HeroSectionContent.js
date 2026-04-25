@@ -49,9 +49,9 @@ export default function HeroSectionContent() {
 
         {/* 2. MAIN HEADLINE PART 1: Massive Gradient */}
         <motion.div variants={itemVariants} className="relative z-20">
-          <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-zinc-400 leading-[0.9]">
+          <h2 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-tighter text-transparent bg-clip-text bg-gradient-to-b from-white via-white to-zinc-400 leading-[0.9]">
             TECH CAREER
-          </h1>
+          </h2>
         </motion.div>
 
         {/* 3. CONNECTOR: Distinct Style */}

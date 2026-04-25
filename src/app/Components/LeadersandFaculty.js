@@ -201,16 +201,16 @@ export default function FacultyAndLeaders(){
 
     return (
         <div className="w-full bg-zinc-100 flex flex-col gap-5 items-center pb-[10vh]">
-            <h1 className="text-4xl sm:text-5xl md:text-[3.4rem] text-zinc-950 mt-[10vh] text-center leading-tight font-[500] py-3">
+            <h2 className="text-4xl sm:text-5xl md:text-[3.4rem] text-zinc-950 mt-[10vh] text-center leading-tight font-[500] py-3">
                 Our Expert Leadership and Faculty
-            </h1>
+            </h2>
             
             <div className="w-[90%] md:w-[95%] lg:w-[90%] h-auto rounded-3xl py-6 space-y-6">
                 {/* Leaders Section */}
                 <div className="w-full py-6 flex flex-col items-center justify-center">
-                    <h1 className="text-3xl sm:text-[2.2rem] font-[500] text-transparent bg-clip-text bg-gradient-to-r from-emerald-700 via-emerald-400 to-emerald-700">
+                    <h3 className="text-3xl sm:text-[2.2rem] font-[500] text-transparent bg-clip-text bg-gradient-to-r from-emerald-700 via-emerald-400 to-emerald-700">
                         Visionary Leaders
-                    </h1>
+                    </h3>
                     <p className="text-base md:text-lg text-center text-zinc-700 w-[95%] md:w-[70%] lg:w-[50%] relative mt-5">
                         Guided by experienced leaders, we drive innovation and excellence to shape a brighter future in IT education and training.
                     </p>
@@ -254,9 +254,9 @@ export default function FacultyAndLeaders(){
                                     className="w-[100%] md:w-[60%] h-full py-2 md:px-3 flex flex-col items-center"
                                     variants={contentVariants}
                                 >
-                                    <h1 className="text-emerald-700 font-semibold text-2xl sm:text-3xl md:text-[2.6rem]">
+                                    <h4 className="text-emerald-700 font-semibold text-2xl sm:text-3xl md:text-[2.6rem]">
                                         {currentDetails?.name}
-                                    </h1>
+                                    </h4>
                                     <p className="text-zinc-400  text-lg md:text-[1.2rem] mt-4 text-center">
                                         {currentDetails?.tag}
                                     </p>
@@ -291,9 +291,9 @@ export default function FacultyAndLeaders(){
 
                 {/* Faculty Section */}
                 <div className="w-full py-6 flex flex-col items-center justify-center">
-                    <h1 className="text-3xl sm:text-[2.2rem] font-[500] text-transparent bg-clip-text bg-gradient-to-r from-emerald-700 via-emerald-400 to-emerald-700">
+                    <h3 className="text-3xl sm:text-[2.2rem] font-[500] text-transparent bg-clip-text bg-gradient-to-r from-emerald-700 via-emerald-400 to-emerald-700">
                         Expert Faculty
-                    </h1>
+                    </h3>
                     <p className="text-base md:text-lg text-center text-zinc-700 w-[95%] md:w-[70%] lg:w-[50%] relative mt-5">
                         Learn from industry experts who bring real-world knowledge and passion to every session, ensuring your success.
                     </p>
@@ -337,9 +337,9 @@ export default function FacultyAndLeaders(){
                                     className="w-full md:w-[60%] h-full py-2 md:px-3 flex flex-col items-center"
                                     variants={contentVariants}
                                 >
-                                    <h1 className="text-emerald-600 font-semibold text-2xl sm:text-3xl md:text-[2.6rem]">
+                                    <h4 className="text-emerald-600 font-semibold text-2xl sm:text-3xl md:text-[2.6rem]">
                                         {currentDetails?.name}
-                                    </h1>
+                                    </h4>
                                     <p className="text-zinc-400 text-lg md:text-[1.2rem] text-center">
                                         {currentDetails?.tag}
                                     </p>

@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: {
-    default: "IT Courses In Nagpur | Techtonic Lab", // Main Focus Keyword
+    default: "IT Courses in Nagpur | SAP, Data Science & Data Analytics | Techtonic-Lab ", // Main Focus Keyword
     template: "%s | IT Courses In Nagpur"
   },
   description: "IT Courses in Nagpur at Techtonic Lab with hands-on training in SAP, Data Science & Data Analyst courses for real-world job success.",
@@ -33,10 +33,60 @@ export const metadata = {
   },
 };
 
+const localBusinessSchema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Techtonic Lab",
+  "alternateName": "Techtonic Corporate",
+  "url": "https://techtoniccorporate.com",
+  "logo": "https://techtoniccorporate.com/images/logo.png",
+  "image": "https://techtoniccorporate.com/images/techtonic-lab.jpg",
+  "description": "Techtonic Lab is an IT training institute in Nagpur offering practical, placement-focused courses in SAP, Data Analytics, and Data Science.",
+  "telephone": "+918766069947",
+  "email": "info@techtoniccorporate.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Second Floor, Plot No.10, SAI NIT-JIT PLAZA, Beltarodi Rd, nr. GULMOHAR RESTAURANT",
+    "addressLocality": "Manish Nagar, Somalwada",
+    "addressRegion": "Maharashtra",
+    "postalCode": "440037",
+    "addressCountry": "IN"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "21.0839302",
+    "longitude": "79.0799193"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+      "opens": "11:00",
+      "closes": "20:00"
+    }
+  ],
+  "sameAs": [
+    "https://www.instagram.com/techtonic_lab/"
+  ],
+  "priceRange": "₹₹",
+  "currenciesAccepted": "INR",
+  "paymentAccepted": "Cash, UPI, Bank Transfer",
+  "areaServed": {
+    "@type": "City",
+    "name": "Nagpur"
+  }
+};
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        {/* Local Business Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
+
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-ER3407LB59"

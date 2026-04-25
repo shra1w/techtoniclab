@@ -84,9 +84,9 @@ const TestimonialCarousel = () => {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-zinc-950 px-4 sm:px-6 lg:px-8 py-8 sm:py-12 lg:py-16">
       {/* Header Section - Responsive */}
-      <h1 className='uppercase font-medium mb-2 sm:mb-3 text-white text-xs sm:text-sm tracking-wider'>
+      <h2 className='uppercase font-medium mb-2 sm:mb-3 text-white text-xs sm:text-sm tracking-wider'>
         Testimonials
-      </h1>
+      </h2>
       
       {/* Title - Fully Responsive with proper line heights */}
       <div className='w-full sm:w-[90%] md:w-[80%] lg:w-[60%] text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-semibold text-center leading-tight sm:leading-tight md:leading-tight lg:leading-tight mb-8 sm:mb-12 md:mb-16 lg:mb-20 text-white px-2'>
@@ -130,9 +130,9 @@ const TestimonialCarousel = () => {
             >
               <div className="bg-emerald-500/30 bg-opacity-10 border border-emerald-700 border-opacity-20 rounded-lg p-4 sm:p-6 md:p-8 text-center relative overflow-hidden">
                 {/* Company and Package - Responsive text */}
-                <h1 className='text-base sm:text-lg md:text-xl lg:text-2xl font-semibold mb-3 sm:mb-4 text-emerald-400 leading-snug px-2'>
+                <h3 className='text-base sm:text-lg md:text-xl lg:text-2xl font-semibold mb-3 sm:mb-4 text-emerald-400 leading-snug px-2'>
                   {`Placed at ${currentTestimonial.company}${currentTestimonial.package ? ` • ${currentTestimonial.package}` : ''}`}
-                </h1>
+                </h3>
                 
                 {/* Testimonial Content - Responsive text */}
                 <p className="text-white text-xs sm:text-sm md:text-md leading-relaxed mb-3 sm:mb-4 px-2">

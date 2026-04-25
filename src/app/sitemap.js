@@ -32,19 +32,19 @@ export default function sitemap() {
         priority: 0.8,
       },
       {
-        url: `${NEXT_PUBLIC_REDIRECT_URL}/corporate_grooming`,
+        url: `${NEXT_PUBLIC_REDIRECT_URL}/corporate-grooming`,
         lastModified: new Date(),
         changeFrequency: 'yearly',
         priority: 0.8,
       },
        {
-        url: `${NEXT_PUBLIC_REDIRECT_URL}/data_science_course`,
+        url: `${NEXT_PUBLIC_REDIRECT_URL}/data-science-course`,
         lastModified: new Date(),
         changeFrequency: 'yearly',
         priority: 0.8,
       },
       {
-        url: `${NEXT_PUBLIC_REDIRECT_URL}/data_analytics_course`,
+        url: `${NEXT_PUBLIC_REDIRECT_URL}/data-analytics-course`,
         lastModified: new Date(),
         changeFrequency: 'yearly',
         priority: 0.8,
@@ -62,7 +62,7 @@ export default function sitemap() {
         priority: 1,
       },
       {
-        url: `${NEXT_PUBLIC_REDIRECT_URL}/sap_course`,
+        url: `${NEXT_PUBLIC_REDIRECT_URL}/sap-course`,
         lastModified: new Date(),
         changeFrequency: 'yearly',
         priority: 0.8,

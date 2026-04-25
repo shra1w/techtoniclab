@@ -139,21 +139,21 @@ const CoursesSection = () => {
       description: "SAP is a skill that is highly in demand with the leading employers. Our modules cover SAP Financial Accounting and Controlling, SAP Materials Management, SAP Sales & Distribution and SAP Production Planning and Quality Management through sap course in Nagpur, sap classes Nagpur and sap classes in Nagpur.",
       image: "/course/sap.png",
       tag: "Highly In Demand",
-      link: "/sap_course"
+      link: "/sap-course"
     },
     {
       title: "Data Analytics",
       description: "We have a comprehensive data analytics program covering all its aspects. From teaching all the tools and techniques to analysing real data, our program makes you efficient in using them in the actual industry environment as part of data analyst course in Nagpur and data analyst classes in Nagpur.",
       image: "/course/data.png", 
       tag: "Comprehensive",
-       link: "/data_analytics_course"
+       link: "/data-analytics-course"
     },
     {
       title: "Data Science",
       description: "Combining the leading skills from statistical analysis, programming, domain knowledge and machine learning. From strengthening your basics to teaching advanced skills, we give you a holistic approach in developing this skill in such a short duration through data science course in Nagpur and data science classes in Nagpur.",
       image: "/course/corporate.png",
       tag: "Holistic Approach",
-      link: "/data_science_course"
+      link: "/data-science-course"
     }
   ];
 
