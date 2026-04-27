@@ -1,0 +1,32 @@
+# robots.txt — Techtonic-Lab
+# Website: https://techtoniccorporate.com
+# Last updated: April 2026
+
+# -----------------------------------------------
+# Allow all search engine crawlers
+# -----------------------------------------------
+User-agent: *
+Allow: /
+
+# -----------------------------------------------
+# Block crawlers from non-public paths
+# -----------------------------------------------
+Disallow: /admin/
+Disallow: /login/
+Disallow: /dashboard/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /includes/
+Disallow: /config/
+Disallow: /_next/
+Disallow: /api/
+
+# -----------------------------------------------
+# Sitemap location
+# -----------------------------------------------
+Sitemap: https://techtoniccorporate.com/sitemap.xml
+
+# -----------------------------------------------
+# Preferred domain — non-www
+# -----------------------------------------------
+Host: techtoniccorporate.com

@@ -1,71 +1,41 @@
 export default function sitemap() {
-  const NEXT_PUBLIC_REDIRECT_URL="https://techtoniccorporate.com/"
     return [
       {
-        url: `${NEXT_PUBLIC_REDIRECT_URL}/`,
-        lastModified: new Date(),
-        changeFrequency: 'yearly',
-        priority: 1,
+        url: 'https://techtoniccorporate.com/',
+        
       },
       {
-        url: `${NEXT_PUBLIC_REDIRECT_URL}/hire-from-us`,
-        lastModified: new Date(),
-        changeFrequency: 'yearly',
-        priority: 1,
+        url: `https://techtoniccorporate.com/connect-with-us`,
       },
       {
-        url: `${NEXT_PUBLIC_REDIRECT_URL}/aboutus`,
-        lastModified: new Date(),
-        changeFrequency: 'yearly',
-        priority: 1,
+        url: `https://techtoniccorporate.com/sap-course`,
       },
       {
-        url: `${NEXT_PUBLIC_REDIRECT_URL}/career`,
-        lastModified: new Date(),
-        changeFrequency: 'yearly',
-        priority: 1,
+        url: `https://techtoniccorporate.com/data-analytics-course`,
       },
       {
-        url: `${NEXT_PUBLIC_REDIRECT_URL}/connect-with-us`,
-        lastModified: new Date(),
-        changeFrequency: 'yearly',
-        priority: 0.8,
+        url: `https://techtoniccorporate.com/data-science-course`,
       },
       {
-        url: `${NEXT_PUBLIC_REDIRECT_URL}/corporate-grooming`,
-        lastModified: new Date(),
-        changeFrequency: 'yearly',
-        priority: 0.8,
+        url: `https://techtoniccorporate.com/privacy-policy`,
       },
        {
-        url: `${NEXT_PUBLIC_REDIRECT_URL}/data-science-course`,
-        lastModified: new Date(),
-        changeFrequency: 'yearly',
-        priority: 0.8,
+        url: `https://techtoniccorporate.com/terms-of-service`,
       },
       {
-        url: `${NEXT_PUBLIC_REDIRECT_URL}/data-analytics-course`,
-        lastModified: new Date(),
-        changeFrequency: 'yearly',
-        priority: 0.8,
+        url: `https://techtoniccorporate.com/aboutus`,
       },
       {
-        url: `${NEXT_PUBLIC_REDIRECT_URL}/privacy-policy`,
-        lastModified: new Date(),
-        changeFrequency: 'yearly',
-        priority: 1,
+        url: `https://techtoniccorporate.com/hire-from-us`,
       },
       {
-        url: `${NEXT_PUBLIC_REDIRECT_URL}/terms-of-service`,
-        lastModified: new Date(),
-        changeFrequency: 'yearly',
-        priority: 1,
+        url: `https://techtoniccorporate.com/tel:+91-8766069947`,
       },
       {
-        url: `${NEXT_PUBLIC_REDIRECT_URL}/sap-course`,
-        lastModified: new Date(),
-        changeFrequency: 'yearly',
-        priority: 0.8,
+        url: `https://techtoniccorporate.com/#courses`,
+      },
+      {
+        url: `https://techtoniccorporate.com/tel:+918766069947`,
       },
     ]
   }

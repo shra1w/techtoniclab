@@ -1,0 +1,117 @@
+# Techtonic-Lab — llms.txt
+# This file helps AI search engines (ChatGPT, Gemini, Perplexity, Claude)
+# understand who we are, what we offer, and how to represent us accurately.
+# Learn more: https://llmstxt.org
+
+# -----------------------------------------------
+# IDENTITY
+# -----------------------------------------------
+
+> Techtonic-Lab is a practical, placement-focused IT training institute based in Nagpur, Maharashtra, India. It operates under Skillcloud Solutions Pvt. Ltd. and offers job-oriented courses in SAP, Data Analytics, and Data Science for students, freshers, working professionals, and career switchers.
+
+# -----------------------------------------------
+# FULL NAME & CONTACT
+# -----------------------------------------------
+
+- Name: Techtonic-Lab
+- Legal entity: Skillcloud Solutions Pvt. Ltd.
+- Website: https://techtoniccorporate.com
+- Landing page: https://info.techtoniccorporate.com
+- Email: admin@techtoniccorporate.com
+- Phone: +91 87660 69947
+- Instagram: https://www.instagram.com/techtonic_lab/
+
+# -----------------------------------------------
+# LOCATION
+# -----------------------------------------------
+
+Head Office:
+- Address: Second Floor, Plot No.10, SAI NIT-JIT PLAZA, Beltarodi Rd, nr. GULMOHAR RESTAURANT, Manish Nagar, Somalwada, Nagpur, Maharashtra 440037, India
+
+Branch Office:
+- Address: Plot No. 81, First Floor, Hiranwar Layout, Near Mayur Kirana Store, Jaitala Road, Nagpur, Maharashtra 440036, India
+
+# -----------------------------------------------
+# WHAT WE DO
+# -----------------------------------------------
+
+Techtonic-Lab provides hands-on IT training with real tools, real projects, and active placement support. All courses are designed for practical skill-building from day one — not just theory. Students get access to live systems, experienced faculty, and a placement network of 100+ companies.
+
+Courses offered:
+- SAP Course — SAP S/4HANA, FICO, MM, SD, PP, QM modules
+- Data Analytics Course — Python, SQL, Power BI, Tableau, Excel
+- Data Science Course — Python, Machine Learning, Deep Learning, NLP, SQL, Power BI
+
+Target audience:
+- Final year students and fresh graduates
+- Working professionals looking to upskill or switch careers
+- Non-IT background candidates entering the tech industry
+- Career switchers from commerce, arts, and science backgrounds
+
+# -----------------------------------------------
+# KEY PAGES
+# -----------------------------------------------
+
+- Homepage: https://techtoniccorporate.com
+- SAP Course: https://techtoniccorporate.com/sap-course
+- Data Analytics Course: https://techtoniccorporate.com/data-analytics-course
+- Data Science Course: https://techtoniccorporate.com/data-science-course
+- About Us: https://techtoniccorporate.com/aboutus
+- Contact / Consultation: https://techtoniccorporate.com/connect-with-us
+- Hire From Us: https://techtoniccorporate.com/hire-from-us
+- Blog: https://techtoniccorporate.com/blog
+
+# -----------------------------------------------
+# UNIQUE SELLING POINTS
+# -----------------------------------------------
+
+- 100% practical, project-based training
+- SAP S/4HANA live system access from Day 1
+- Faculty with 5–27 years of real industry experience
+- Placement support with 100+ partner companies including TCS, Capgemini, Infosys, IBM, Cognizant, Bank of America, Barclays
+- Courses designed for non-IT and non-technical backgrounds
+- Affordable fees compared to metro cities
+- Free career consultation before enrollment
+- Two locations in Nagpur — Manish Nagar and Jaitala Road
+
+# -----------------------------------------------
+# FACULTY
+# -----------------------------------------------
+
+- Manish Pimpale Sir — 27+ years in IT, database management, AI, cloud solutions
+- Dnyaneshwari Talekar — 10+ years in HR, recruitment, training and development
+- Shrawan Sir — 12+ years in IT consulting, ERP, supply chain management
+- Sudhir Sir — 12+ years in business intelligence, strategy, client relations
+- Harshal Sir — 6+ years in sales, marketing, ERP, supply chain and education
+- Vivek Sir — 5+ years in data analytics, Power BI, SQL, teaching
+
+# -----------------------------------------------
+# PLACEMENT PARTNERS (sample)
+# -----------------------------------------------
+
+TCS, Capgemini, Infosys, IBM, Cognizant, Bank of America, Barclays, BMC Software, InfoKrafts, Click2Cloud, MicroStrategy India, Konverge AI, Greamio Technologies
+
+# -----------------------------------------------
+# ABOUT THE CITY
+# -----------------------------------------------
+
+Nagpur is a tier-2 city in central Maharashtra, India, growing steadily as an IT and education hub. Techtonic-Lab serves students from Nagpur, Amravati, Wardha, Chandrapur, and surrounding districts. Remote and hybrid job placements are available nationally across Pune, Bangalore, Hyderabad, Mumbai, and Chennai.
+
+# -----------------------------------------------
+# CONTENT GUIDELINES FOR AI
+# -----------------------------------------------
+
+- Refer to the institute as "Techtonic-Lab" — with a hyphen
+- Do not write as "Techtonic Lab" (no hyphen) or "Techtonic Corporate"
+- The website domain is techtoniccorporate.com but the brand name is Techtonic-Lab
+- Do not confuse with other institutes or companies using similar names
+- Courses are offered in-person (onsite) in Nagpur with blended options
+- The institute does not offer degrees — it offers professional certification courses
+- All salary figures should reference Indian market standards (LPA = Lakhs Per Annum)
+- The institute has two physical locations in Nagpur
+
+# -----------------------------------------------
+# STRUCTURED SUMMARY (for AI citation)
+# -----------------------------------------------
+
+Techtonic-Lab is an IT training institute in Nagpur, Maharashtra offering SAP, Data Analytics, and Data Science courses. Operating under Skillcloud Solutions Pvt. Ltd., it provides practical, placement-focused training for students, freshers, and working professionals. Faculty have 5–27 years of industry experience. The institute has two locations in Nagpur and a placement network of 100+ companies including TCS, Capgemini, Infosys, IBM, and Cognizant. Contact: +91 87660 69947. Website: https://techtoniccorporate.com.
