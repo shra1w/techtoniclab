@@ -104,7 +104,7 @@ const FooterSection = () => {
 
         {/* Copyright Information */}
         <div className="mt-12 pt-8  text-center text-gray-400 text-sm">
-          <p>Copyright © 2025 Techtonic Lab Pvt. Ltd.</p>
+          <p>Copyright © {new Date().getFullYear()} Techtonic Lab Pvt. Ltd.</p>
           <p>All Rights Reserved.</p>
         </div>
       </div>

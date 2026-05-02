@@ -185,10 +185,7 @@ export default function BlogsPage() {
         </section>
       )}
 
-      {/* Footer */}
-      <footer className="border-t border-neutral-200 py-10 text-center text-sm text-neutral-500">
-        © {new Date().getFullYear()} Techtonic. Crafted with care.
-      </footer>
+     
     </main>
   );
 }
